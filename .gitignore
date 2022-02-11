@@ -105,3 +105,4 @@ dist
 
 ./vs
 .vs/slnx.sqlite
+/build
