@@ -39,5 +39,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "rollup": "^2.69.1",
+    "rollup-plugin-node-resolve": "^5.2.0"
   }
 }
