@@ -1,0 +1,81 @@
+{
+    "rules": {
+      "no-internal-module": true,
+      "no-reference": true,
+      "no-var-requires": true,
+      "prefer-for-of": true,
+      "ban-types": {
+        "options": [
+            ["Object", "Avoid using the `Object` type. Did you mean `object`?"],
+            ["Function", "Avoid using the `Function` type. Prefer a specific function type, like `() => void`, or use `ts.AnyFunction`."],
+            ["Boolean", "Avoid using the `Boolean` type. Did you mean `boolean`?"],
+            ["Number", "Avoid using the `Number` type. Did you mean `number`?"],
+            ["String", "Avoid using the `String` type. Did you mean `string`?"]
+        ]
+      },
+      "typedef-whitespace": [
+        true,
+        {
+          "call-signature": "nospace",
+          "index-signature": "nospace",
+          "parameter": "nospace",
+          "property-declaration": "nospace",
+          "variable-declaration": "nospace"
+        },
+        {
+          "call-signature": "onespace",
+          "index-signature": "onespace",
+          "parameter": "onespace",
+          "property-declaration": "onespace",
+          "variable-declaration": "onespace"
+        }
+      ],
+      "unified-signatures": true,
+      "curly": true,
+      "no-arg": true,
+      "no-conditional-assignment": true,
+      "no-empty": true,
+      "no-eval": true,
+      "no-for-in-array": true,
+      "no-inferred-empty-object-type": true,
+      "no-null-keyword": true,
+      "no-shadowed-variable": true,
+      "no-string-literal": false,
+      "no-string-throw": true,
+      "no-switch-case-fall-through": true,
+      "no-unsafe-finally": true,
+      "no-unused-expression": true,
+      /*"no-unused-new": true,*/
+      "no-var-keyword": true,
+      "no-void-expression": false,
+      "radix": true,
+      "restrict-plus-operands": true,
+      "triple-equals": true,
+      /*"typeof-compare": true,*/
+      "use-isnan": true,
+      "eofline": true,
+      "indent": [true, "spaces"],
+      "no-default-export": false,
+      "no-mergeable-namespace": true,
+      "no-trailing-whitespace": true,
+      "prefer-const": true,
+      "trailing-comma": [true, { "multiline": "always", "singleline": "never" }],
+      "arrow-parens": false,
+      "callable-types": true,
+      "class-name": true,
+      "interface-over-type-literal": true,
+      "new-parens": true,
+      "no-angle-bracket-type-assertion": true,
+      "no-consecutive-blank-lines": true,
+      "no-parameter-properties": true,
+      "object-literal-key-quotes": [true, "as-needed"],
+      "object-literal-shorthand": true,
+      "one-line": [true, "check-catch", "check-finally", /*"check-else",*/ "check-open-brace", "check-whitespace"],
+      "one-variable-per-declaration": true,
+      "quotemark": [true, "single", "jsx-double"],
+      "semicolon": [true, "always"],
+      "space-before-function-paren": [true, { "anonymous": "allow", "named": "allow", "asyncArrow": "always", "method": "allow", "constructor": "allow" }],
+      "variable-name": [true, "check-format", "allow-pascal-case", "allow-leading-underscore", "ban-keywords"],
+      "whitespace": [true, "check-branch", "check-decl", "check-operator", "check-module", "check-separator", "check-type", "check-typecast"]
+    }
+  }

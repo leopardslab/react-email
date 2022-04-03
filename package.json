@@ -1,0 +1,45 @@
+{
+  "name": "react-component-rollup-typescript-boilerplate",
+  "version": "1.0.1",
+  "description": "A boilerplate to develop react apps and components with TypeScript and Rollup",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "styles": "dist/index.css",
+  "scripts": {
+    "build": "npm run lint && npm run clean:dist && NODE_ENV=production rollup -c",
+    "clean:dist": "rm -rf dist/*",
+    "watch": "rollup -cw",
+    "start": "rollup -cw",
+    "lint": "tslint --project tsconfig.json --project"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Devesh21700Kumar/react-email.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Devesh21700Kumar/react-email/issues"
+  },
+  "homepage": "https://github.com/Devesh21700Kumar/react-email#readme",
+  "devDependencies": {
+    "@types/react": "latest",
+    "autoprefixer": "^8.0.0",
+    "react": "16",
+    "rollup": "latest",
+    "rollup-plugin-babili": "^3.1.1",
+    "rollup-plugin-commonjs": "latest",
+    "rollup-plugin-css-only": "latest",
+    "rollup-plugin-livereload": "latest",
+    "rollup-plugin-node-resolve": "latest",
+    "rollup-plugin-postcss": "latest",
+    "rollup-plugin-replace": "latest",
+    "rollup-plugin-serve": "latest",
+    "rollup-plugin-typescript2": "latest",
+    "rollup-watch": "latest",
+    "tslib": "latest",
+    "tslint": "latest",
+    "typescript": "latest",
+    "postcss-clean": "latest"
+  }
+}
