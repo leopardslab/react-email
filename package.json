@@ -1,6 +1,6 @@
 {
-  "homepage": "http://namankumar25.github.io/react-email",
-  "name": "@namankumar25/react-email",
+  "homepage": "http://<GITHUB_USERNAME>.github.io/react-email",
+  "name": "@<GITHUB_USERNAME>/react-email",
   "version": "0.5.0",
   "description": "Email boiler",
   "scripts": {
@@ -54,6 +54,6 @@
   ],
   "types": "dist/index.d.ts",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/namankumar25"
+    "registry": "https://npm.pkg.github.com/<GITHUB_USERNAME>"
   }
 }
