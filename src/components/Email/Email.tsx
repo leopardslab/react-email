@@ -20,12 +20,14 @@ const Email = ({ text, children, styling }: Props) => {
   const updatedStyles = { ...mystyle.root, ...styling };
 
   return (
-    <span style={updatedStyles}>
-      {text}
-      {children}
-    </span>
+    <table style={updatedStyles}>
+      <thead>
+        <tr>
+          <td>{text}</td>
+        </tr>
+      </thead>
+    </table>
   );
-
 };
 
 export default Email;
