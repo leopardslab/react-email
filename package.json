@@ -1,0 +1,59 @@
+{
+  "homepage": "http://namankumar25.github.io/react-email",
+  "name": "@namankumar25/react-email",
+  "version": "0.5.0",
+  "description": "Email boiler",
+  "scripts": {
+    "rollup": "rollup -c",
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "gh-pages -d storybook-static"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@rollup/plugin-commonjs": "^21.0.3",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@rollup/plugin-typescript": "^8.3.1",
+    "@storybook/addon-actions": "^6.4.20",
+    "@storybook/addon-essentials": "^6.4.20",
+    "@storybook/addon-interactions": "^6.4.20",
+    "@storybook/addon-links": "^6.4.20",
+    "@storybook/builder-webpack5": "^6.4.20",
+    "@storybook/manager-webpack5": "^6.4.20",
+    "@storybook/react": "^6.4.20",
+    "@storybook/testing-library": "^0.0.9",
+    "@testing-library/react": "^13.0.0",
+    "@types/jest": "^27.4.1",
+    "@types/react": "^17.0.43",
+    "babel-jest": "^27.5.1",
+    "babel-loader": "^8.2.4",
+    "gh-pages": "^3.2.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.5.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "rollup": "^2.70.1",
+    "rollup-plugin-dts": "^4.2.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "typescript": "^4.6.3"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/namankumar25"
+  }
+}
