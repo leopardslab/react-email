@@ -8,6 +8,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:import/typescript',
     'prettier',
+    'plugin:storybook/recommended',
   ],
   settings: {
     'import/resolver': {
@@ -24,8 +25,19 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint'],
   rules: {
-    quotes: [2, 'single', { avoidEscape: true }],
-    'react/jsx-filename-extension': [1, { extensions: ['.tsx', '.ts'] }],
+    quotes: [
+      2,
+      'single',
+      {
+        avoidEscape: true,
+      },
+    ],
+    'react/jsx-filename-extension': [
+      1,
+      {
+        extensions: ['.tsx', '.ts'],
+      },
+    ],
     'react/function-component-definition': [
       2,
       {
@@ -45,9 +57,18 @@ module.exports = {
         css: 'never',
       },
     ],
-    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
-    'no-use-before-define': ['error', { variables: false }],
-
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: true,
+      },
+    ],
+    'no-use-before-define': [
+      'error',
+      {
+        variables: false,
+      },
+    ],
     // Used for redux slices
     'no-param-reassign': [
       'error',
