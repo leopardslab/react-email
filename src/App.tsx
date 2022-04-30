@@ -1,15 +1,5 @@
 import React from 'react';
-import Button from './component/Button/Button';
 
-const App = () => (
-  <div>
-    <Button
-      type="primary"
-      text="Test Button"
-      // eslint-disable-next-line no-console
-      onClick={() => console.log('hello')}
-    />
-  </div>
-);
+const App = () => <h1>Index.tsx</h1>;
 
 export default App;
