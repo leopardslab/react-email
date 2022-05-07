@@ -8,12 +8,14 @@ export default {
 
 export const Basic = () => (
   <Container
-    cellspacing={10}
-    cellpadding={20}
-    width="100px"
     style={{
       border: '3px solid black',
       backgroundColor: 'red',
+      padding: 10,
+      borderSpacing: 10,
+      width: '100px',
+      height: '100px',
+      cssFloat: 'left',
     }}
   >
     Hello, World!!
