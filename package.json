@@ -22,12 +22,22 @@
     "dist"
   ],
   "scripts": {
+    "prepare": "husky install",
     "build": "tsc -p tsconfig.json",
     "watch": "tsc --watch",
     "lint": "eslint src/**/*",
     "lint:fix": "eslint --fix src/**/*",
     "pretty": "prettier --check .",
-    "pretty:fix": "prettier --write ."
+    "pretty:fix": "prettier --write .",
+    "lint-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "src/*.{ts,tsx}": [
+      "yarn pretty:fix",
+      "yarn lint:fix",
+      "yarn pretty",
+      "yarn lint"
+    ]
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.28.0",
@@ -35,7 +45,7 @@
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "husky": "^8.0.1",
+    "husky": "^8.0.0",
     "lint-staged": "^13.0.2",
     "prettier": "^2.7.1",
     "typescript": "^4.7.3"
