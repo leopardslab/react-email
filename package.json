@@ -24,6 +24,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "watch": "tsc --watch",
+    "lint": "eslint src/**/*",
+    "lint:fix": "eslint --fix src/**/*",
     "pretty": "prettier --check .",
     "pretty:fix": "prettier --write ."
   },
