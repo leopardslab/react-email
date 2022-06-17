@@ -23,9 +23,19 @@
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "watch": "tsc --watch"
+    "watch": "tsc --watch",
+    "pretty": "prettier --check .",
+    "pretty:fix": "prettier --write ."
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.2",
+    "prettier": "^2.7.1",
     "typescript": "^4.7.3"
   },
   "keywords": [
