@@ -41,6 +41,8 @@
     ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
     "cz-conventional-changelog": "3.3.0",
@@ -52,6 +54,16 @@
     "prettier": "^2.7.1",
     "typescript": "^4.7.3"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
   "keywords": [
     "react",
     "react-package",
@@ -59,10 +71,5 @@
     "email-builder",
     "react-email-builder",
     "html-email"
-  ],
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  }
+  ]
 }
