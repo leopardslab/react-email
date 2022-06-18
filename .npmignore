@@ -1,0 +1,8 @@
+src/
+example/
+spec/
+.editorconfig
+.eslintignore
+.eslintrc
+.prettierignore
+.prettierrc

@@ -25,6 +25,7 @@
     "prepare": "husky install",
     "build": "tsc -p tsconfig.json",
     "watch": "tsc --watch",
+    "cm": "cz -s",
     "lint": "eslint src/**/*",
     "lint:fix": "eslint --fix src/**/*",
     "pretty": "prettier --check .",
@@ -40,8 +41,11 @@
     ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
+    "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
@@ -49,6 +53,16 @@
     "lint-staged": "^13.0.2",
     "prettier": "^2.7.1",
     "typescript": "^4.7.3"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   },
   "keywords": [
     "react",
