@@ -4,6 +4,6 @@ interface EmailProps {
   children?: ReactNode;
 }
 
-export const Email = ({ children }: EmailProps) => {
+export const Email = ({ children }: EmailProps): JSX.Element => {
   return <div>{children}</div>;
 };
