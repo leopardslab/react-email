@@ -13,7 +13,7 @@
       "@semantic-release/github",
       {
         "assets": [{ "path": "dist", "label": "package distribution" }],
-        "addReleases": "top"
+        "addReleases": "bottom"
       }
     ],
     "@semantic-release/npm",
