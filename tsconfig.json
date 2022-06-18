@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
+    "target": "ESNext",
+    "module": "ESNext",
     "moduleResolution": "node",
     "declaration": true,
     "strict": true,
@@ -19,7 +19,8 @@
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
     "outDir": "./dist/",
-    "lib": ["ES6", "DOM"]
+    "lib": ["ESNext", "DOM"],
+    "jsx": "react-jsx"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "**/*.test.ts"]
