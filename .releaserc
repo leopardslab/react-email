@@ -9,6 +9,13 @@
         "changelogFile": "CHANGELOG.md"
       }
     ],
+    [
+      "@semantic-release/github",
+      {
+        "assets": [{ "path": "dist", "label": "package distribution" }],
+        "addReleases": "top"
+      }
+    ],
     "@semantic-release/npm",
     [
       "@semantic-release/git",
