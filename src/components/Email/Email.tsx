@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-interface EmailProps {
+export interface EmailProps {
   children?: ReactNode;
 }
 
