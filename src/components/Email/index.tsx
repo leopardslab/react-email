@@ -1,9 +1,9 @@
-import { FC, ReactNode } from 'react';
+import { ReactNode } from 'react';
 
-interface EmailPropType {
+interface EmailProps {
   children?: ReactNode;
 }
 
-export const Email: FC<EmailPropType> = (props) => {
-  return <div>{props.children}</div>;
+export const Email = ({ children }: EmailProps) => {
+  return <div>{children}</div>;
 };
