@@ -30,7 +30,8 @@
     "lint:fix": "eslint --fix src/**/*",
     "pretty": "prettier --check .",
     "pretty:fix": "prettier --write .",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "release": "semantic-release --branches main"
   },
   "lint-staged": {
     "src/*.{ts,tsx}": [
@@ -43,6 +44,8 @@
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
     "cz-conventional-changelog": "3.3.0",
@@ -52,6 +55,7 @@
     "husky": "^8.0.0",
     "lint-staged": "^13.0.2",
     "prettier": "^2.7.1",
+    "semantic-release": "^19.0.3",
     "typescript": "^4.7.3"
   },
   "husky": {
