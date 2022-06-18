@@ -31,7 +31,9 @@
     "pretty": "prettier --check .",
     "pretty:fix": "prettier --write .",
     "lint-staged": "lint-staged",
-    "release": "semantic-release --branches main"
+    "release": "semantic-release --branches main",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "lint-staged": {
     "src/*.{ts,tsx}": [
@@ -46,15 +48,25 @@
     "react-dom": ">=16.8"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.5",
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/builder-webpack4": "^6.5.9",
+    "@storybook/manager-webpack4": "6.5.9",
+    "@storybook/react": "^6.5.9",
+    "@storybook/testing-library": "^0.0.13",
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
+    "babel-loader": "^8.2.5",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
@@ -84,5 +96,6 @@
     "email-builder",
     "react-email-builder",
     "html-email"
-  ]
+  ],
+  "dependencies": {}
 }
