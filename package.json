@@ -25,6 +25,7 @@
     "prepare": "husky install",
     "build": "tsc -p tsconfig.json",
     "watch": "tsc --watch",
+    "test": "jest",
     "cm": "cz -s",
     "lint": "eslint src/**/*",
     "lint:fix": "eslint --fix src/**/*",
