@@ -6,8 +6,11 @@ export default {
   component: Email,
 } as ComponentMeta<typeof Email>;
 
-export const MyEmail: ComponentStory<typeof Email> = () => (
-  <Email>
-    <h2>Hello World</h2>
-  </Email>
-);
+//“template” of how args map to rendering
+const Template: ComponentStory<typeof Email> = (args) => <Email {...args} />;
+
+export const MyEmail = Template.bind({});
+
+MyEmail.args = {
+  children: <h2>Hello world</h2>,
+};
