@@ -1,1 +1,1 @@
-export { Email } from './components/Email';
+export { Email, EmailProps } from './components/Email';

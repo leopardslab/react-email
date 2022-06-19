@@ -9,8 +9,8 @@ export default {
 //“template” of how args map to rendering
 const Template: ComponentStory<typeof Email> = (args) => <Email {...args} />;
 
-export const MyEmail = Template.bind({});
+export const Default = Template.bind({});
 
-MyEmail.args = {
+Default.args = {
   children: <h2>Hello world</h2>,
 };
