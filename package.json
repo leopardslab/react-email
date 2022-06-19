@@ -99,6 +99,5 @@
     "email-builder",
     "react-email-builder",
     "html-email"
-  ],
-  "dependencies": {}
+  ]
 }
