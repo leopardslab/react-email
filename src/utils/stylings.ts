@@ -1,8 +1,9 @@
 import { CSSProperties } from 'react';
+import { mergeDeep } from './mergeDeep';
 
-// interface CSSClasses {
-//   [key: string]: CSSProperties;
-// }
+export interface CSSClasses {
+  [key: string]: CSSProperties;
+}
 
 export const sx = (...args: CSSProperties[]): CSSProperties => {
   const initialValue: CSSProperties = {};
@@ -12,4 +13,10 @@ export const sx = (...args: CSSProperties[]): CSSProperties => {
   }, initialValue);
 
   return result;
+};
+
+export const makeStyles = (classes: CSSClasses) => {
+  return (classes_: CSSClasses) => {
+    return mergeDeep(classes, classes_);
+  };
 };
