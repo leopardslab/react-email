@@ -1,6 +1,6 @@
 import { CSSProperties } from 'react';
 
-interface CSSClasses {
+export interface CSSClasses {
   [key: string]: CSSProperties;
 }
 
