@@ -1,9 +1,14 @@
 import { CSSProperties } from 'react';
 
-export const sx = (...args: CSSProperties[]): CSSProperties => {
+type SXProps = CSSProperties | false | undefined;
+
+export const sx = (...args: SXProps[]): CSSProperties => {
   const initialValue: CSSProperties = {};
 
-  const result = args.reduce((prev: CSSProperties, curr: CSSProperties) => {
+  const result = args.reduce((prev: CSSProperties, curr: SXProps) => {
+    if (!curr) {
+      return prev;
+    }
     return { ...prev, ...curr };
   }, initialValue);
 

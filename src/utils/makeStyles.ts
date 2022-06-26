@@ -1,19 +1,31 @@
 import { CSSProperties } from 'react';
+import { sx } from './sx';
 
 export interface CSSClasses {
   [key: string]: CSSProperties;
 }
 
-const mergeStyles = (target: CSSClasses, source: CSSClasses): CSSClasses => {
-  for (const key in source) {
-    target[key] = Object.assign({ ...target[key] }, { ...source[key] });
+interface overrideOptions {
+  classes?: CSSClasses;
+}
+
+const mergeStyles = (originalClasses: CSSClasses, overrideClasses: CSSClasses): CSSClasses => {
+  const newClasses: CSSClasses = {};
+
+  for (const key in originalClasses) {
+    newClasses[key] = sx(originalClasses[key], overrideClasses[key]);
   }
 
-  return target;
+  return newClasses;
 };
 
 export const makeStyles = (classes: CSSClasses) => {
-  return (classes_?: CSSClasses) => {
-    return mergeStyles(classes, classes_ as CSSClasses);
+  return (options?: overrideOptions) => {
+    const overrideClasses = options?.classes;
+    if (!overrideClasses) {
+      return classes;
+    }
+
+    return mergeStyles(classes, overrideClasses);
   };
 };

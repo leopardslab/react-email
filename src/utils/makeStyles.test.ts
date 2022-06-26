@@ -5,6 +5,9 @@ const style1: CSSClasses = {
     margin: '10px',
     padding: '10px',
   },
+  text: {
+    textAlign: 'center',
+  },
 };
 
 const style2: CSSClasses = {
@@ -24,17 +27,18 @@ const expectedStyle: CSSClasses = {
     padding: '50px',
     color: 'red',
   },
-  hello: {
-    backgroundColor: 'red',
-    borderRadius: '5px',
+  text: {
+    textAlign: 'center',
   },
 };
 
 describe('makeStyles tests', () => {
   test('using makeStyles and useStyles with style1 and style2 should return expectedStyle', () => {
     const useStyles = makeStyles(style1);
-    const style = useStyles(style2);
+    const modifiedStyle1 = useStyles({ classes: style2 });
+    const modifiedStyle2 = useStyles();
 
-    expect(style).toEqual(expectedStyle);
+    expect(modifiedStyle1).toEqual(expectedStyle);
+    expect(modifiedStyle2).toEqual(style1);
   });
 });
