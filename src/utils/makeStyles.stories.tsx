@@ -10,6 +10,7 @@ const useStyles = makeStyles({
   root: {
     width: 'fit-content',
     backgroundColor: 'yellow',
+    padding: '50px',
   },
 });
 
