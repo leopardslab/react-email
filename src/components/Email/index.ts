@@ -1,1 +1,1 @@
-export * from './Email';
+export { Email, EmailProps } from './Email';

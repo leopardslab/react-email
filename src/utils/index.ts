@@ -1,1 +1,2 @@
-export * from './stylings';
+export { sx } from './stylings';
+export { makeStyles } from './makeStyles';
