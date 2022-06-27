@@ -1,5 +1,5 @@
 import { CSSProperties } from 'react';
-import { sx } from './sx';
+import { sx } from '../sx';
 
 export interface CSSClasses {
   [key: string]: CSSProperties;
