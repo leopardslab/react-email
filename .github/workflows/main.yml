@@ -1,0 +1,47 @@
+name: Check, Build & Publish
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: '*'
+
+jobs:
+  check-and-build:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+        os: [ubuntu-latest]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: install, check, and test, and build using Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: yarn
+      - run: yarn lint
+      - run: yarn pretty
+      - run: yarn test
+      - run: yarn build
+
+  publish:
+    runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/heads/main' }}
+    needs: [check-and-build]
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: yarn
+      - run: yarn build
+      - run: yarn release
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
