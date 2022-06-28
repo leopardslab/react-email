@@ -35,7 +35,7 @@ jobs:
     needs: [check-and-build]
     steps:
       - uses: actions/checkout@v2
-      - name: Deply and Publish package using Node.js ${{ matrix.node-version }} 🚀
+      - name: Deploy and Publish package using Node.js ${{ matrix.node-version }} 🚀
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
