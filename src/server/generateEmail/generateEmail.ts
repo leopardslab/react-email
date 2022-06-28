@@ -11,13 +11,13 @@ export const generateEmail = (
   jsxElement: React.ReactElement,
   options?: GenerateEmailOptions,
 ): string => {
-  let baseHTML = '';
-  options?.baseTemplate
-    ? (baseHTML = fs.readFileSync(options.baseTemplate, 'utf8')).toString()
-    : (baseHTML = deafultHTML);
+  const baseHTML: string = options?.baseTemplate
+    ? fs.readFileSync(options.baseTemplate, 'utf8').toString()
+    : deafultHTML;
 
-  let baseCSS = '';
-  options?.baseStyles && (baseCSS = fs.readFileSync(options.baseStyles, 'utf8')).toString();
+  const baseCSS: string = options?.baseStyles
+    ? fs.readFileSync(options.baseStyles, 'utf8').toString()
+    : '';
 
   const JSXtoHTML = ReactDOMServer.renderToStaticMarkup(jsxElement);
 
