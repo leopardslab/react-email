@@ -1,0 +1,1 @@
+export { generateEmail } from './generateEmail';

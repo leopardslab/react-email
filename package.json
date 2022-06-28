@@ -37,7 +37,7 @@
     "build-storybook": "build-storybook"
   },
   "lint-staged": {
-    "src/*.{ts,tsx}": [
+    "src/**/*": [
       "yarn pretty:fix",
       "yarn lint:fix",
       "yarn pretty",
