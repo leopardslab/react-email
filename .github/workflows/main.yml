@@ -1,4 +1,4 @@
-name: Check, Build & Publish
+name: Check, Build & Publish Package
 
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: install, check, and test, and build using Node.js ${{ matrix.node-version }}
+      - name: Install, check, test, and build using Node.js ${{ matrix.node-version }} ⚙️
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
@@ -35,7 +35,7 @@ jobs:
     needs: [check-and-build]
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Deply and Publish package using Node.js ${{ matrix.node-version }} 🚀
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
