@@ -27,17 +27,17 @@
     "watch": "tsc --watch",
     "test": "jest",
     "cm": "cz -s",
-    "lint": "eslint src/**/*",
-    "lint:fix": "eslint --fix src/**/*",
+    "lint": "eslint src/**",
+    "lint:fix": "eslint --fix src/**",
     "pretty": "prettier --check .",
     "pretty:fix": "prettier --write .",
     "lint-staged": "lint-staged",
     "release": "semantic-release --branches main",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -o docs-build"
   },
   "lint-staged": {
-    "src/**/*": [
+    "src/**": [
       "yarn pretty:fix",
       "yarn lint:fix",
       "yarn pretty",
