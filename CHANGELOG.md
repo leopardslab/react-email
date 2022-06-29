@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/leopardslab/react-email/compare/v1.0.0...v1.0.1) (2022-06-29)
+
+
+### Bug Fixes
+
+* **typo:** fixed typo for main.yml ([504dc69](https://github.com/leopardslab/react-email/commit/504dc69e4141dd33a386f511c8cf32de2983a250))
+
 # 1.0.0 (2022-06-29)
 
 
