@@ -1,6 +1,6 @@
 {
   "name": "@leopardslab/react-email",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": "false",
   "description": "React-based component and utility methods-based lightweight library to provide a common interface for email building",
   "author": {
