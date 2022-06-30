@@ -12,5 +12,11 @@ const Template: ComponentStory<typeof Email> = (args) => <Email {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {
-  children: <h2>Hello world</h2>,
+  children: (
+    <tbody>
+      <tr>
+        <td style={{ fontSize: '30px' }}>Hello World</td>
+      </tr>
+    </tbody>
+  ),
 };
