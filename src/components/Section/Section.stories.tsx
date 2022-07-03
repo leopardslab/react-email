@@ -20,5 +20,5 @@ const Template: ComponentStory<typeof Section> = (args) => (
 export const Default = Template.bind({});
 
 Default.args = {
-  children: <td style={{ fontSize: '30px', color: 'red' }}>This is a new section</td>,
+  // children: <td style={{ fontSize: '30px', color: 'red' }}>This is a new section</td>,
 };

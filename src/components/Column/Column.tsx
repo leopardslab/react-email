@@ -8,7 +8,7 @@ export interface ColumnProps {
 
 export const Column = ({ children, className, style }: ColumnProps): JSX.Element => {
   return (
-    <td className={className} style={style}>
+    <td className={className} style={style} align="center">
       {children}
     </td>
   );

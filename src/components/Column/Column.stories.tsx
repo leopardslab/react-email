@@ -17,9 +17,9 @@ const Template: ComponentStory<typeof Column> = (args) => (
 export const Default = Template.bind({});
 
 Default.args = {
-  children: (
-    <tr>
-      <td style={{ fontSize: '30px', color: 'red' }}>Hello World</td>
-    </tr>
-  ),
+  // children: (
+  //   <tr>
+  //     <td style={{ fontSize: '30px', color: 'red' }}>Hello World</td>
+  //   </tr>
+  // ),
 };

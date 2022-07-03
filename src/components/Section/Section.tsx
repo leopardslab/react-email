@@ -14,7 +14,9 @@ export const Section = ({ children, className }: SectionProps): JSX.Element => {
       style={{ width: '100%', border: '0', verticalAlign: 'top' }}
       className={className}
     >
-      <tr>{children}</tr>
+      <tbody>
+        <tr>{children}</tr>
+      </tbody>
     </table>
   );
 };

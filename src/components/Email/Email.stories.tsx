@@ -13,10 +13,14 @@ export const Default = Template.bind({});
 
 Default.args = {
   children: (
-    <tbody>
-      <tr>
-        <td style={{ fontSize: '30px' }}>Hello World</td>
-      </tr>
-    </tbody>
+    <table style={{ width: '100%' }}>
+      <tbody>
+        <tr>
+          <td>
+            <p style={{ margin: '0', fontSize: '30px' }}>Hello World</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   ),
 };
