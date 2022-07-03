@@ -1,20 +1,28 @@
-import { CSSProperties, ReactNode } from 'react';
+import { ReactNode } from 'react';
+import { BaseStyleProp } from '../types';
+import { makeStyles } from '../../utils/makeStyles';
 
-export interface ColumnProps {
+type ColumnStyles = 'root';
+
+export interface ColumnProps extends BaseStyleProp<ColumnStyles> {
   children?: ReactNode;
-  className?: string;
-  style?: CSSProperties;
   align?: 'left' | 'center' | 'right';
 }
+
+const useStyles = makeStyles({
+  root: {},
+});
 
 export const Column = ({
   children,
   className,
-  style,
+  classes,
   align = 'left',
 }: ColumnProps): JSX.Element => {
+  const styles = useStyles({ classes });
+
   return (
-    <td className={className} style={style} align={align}>
+    <td className={className} style={styles.root} align={align}>
       {children}
     </td>
   );

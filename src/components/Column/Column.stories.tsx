@@ -22,4 +22,10 @@ export const Default = Template.bind({});
 Default.args = {
   children: <p style={{ margin: '0', fontSize: '30px' }}>Hello World</p>,
   align: 'center',
+  classes: {
+    root: {
+      backgroundColor: 'red',
+      color: 'white',
+    },
+  },
 };
