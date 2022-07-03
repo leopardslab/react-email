@@ -1,7 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { Email } from '../Email/Email';
-import { Column } from '../Column/Column';
 import { Section } from './Section';
 
 export default {
@@ -11,14 +10,17 @@ export default {
 //“template” of how args map to rendering
 const Template: ComponentStory<typeof Section> = (args) => (
   <Email>
-    <Column>
-      <Section {...args} />
-    </Column>
+    <Section {...args} />
   </Email>
 );
 
 export const Default = Template.bind({});
 
 Default.args = {
-  // children: <td style={{ fontSize: '30px', color: 'red' }}>This is a new section</td>,
+  children: (
+    <td>
+      <p style={{ margin: '0', fontSize: '30px' }}>Hello World 1</p>
+      <p style={{ margin: '0', fontSize: '25px', marginTop: '10px' }}>Hello World 2</p>
+    </td>
+  ),
 };
