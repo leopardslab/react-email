@@ -23,8 +23,8 @@ Default.args = {
       </tbody>
     </table>
   ),
-  styles: {
-    email: {
+  classes: {
+    root: {
       backgroundColor: 'gray',
       color: 'white',
     },
