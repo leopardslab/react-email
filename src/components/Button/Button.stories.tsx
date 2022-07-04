@@ -1,5 +1,8 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
+import { Email } from '../Email/Email';
+import { Section } from '../Section/Section';
+import { Column } from '../Column/Column';
 import { Button } from './Button';
 
 export default {
@@ -8,13 +11,13 @@ export default {
 
 //“template” of how args map to rendering
 const Template: ComponentStory<typeof Button> = (args) => (
-  <table>
-    <tbody>
-      <tr>
+  <Email>
+    <Section>
+      <Column>
         <Button {...args} />
-      </tr>
-    </tbody>
-  </table>
+      </Column>
+    </Section>
+  </Email>
 );
 
 export const Default = Template.bind({});
@@ -22,8 +25,10 @@ export const Default = Template.bind({});
 Default.args = {
   children: 'Click here',
   href: 'https://github.com/leopardslab/react-email',
-  style: {
-    backgroundColor: 'blue',
-    color: 'white',
+  classes: {
+    root: {
+      backgroundColor: 'blue',
+      color: 'white',
+    },
   },
 };

@@ -1,42 +1,41 @@
-import { ReactNode, CSSProperties } from 'react';
+import { ReactNode } from 'react';
+import { BaseStyleProp } from '../types';
+import { makeStyles } from '../../utils/makeStyles';
+import { sx } from '../../utils/sx';
 
-export interface ButtonProps {
+type ButtonStyles = 'root' | 'primary' | 'secondary';
+
+export interface ButtonProps extends BaseStyleProp<ButtonStyles> {
   children?: ReactNode;
   variant?: 'primary' | 'secondary';
   href: string;
-  align?: 'left' | 'center' | 'right';
-  style?: CSSProperties;
 }
+
+const useStyles = makeStyles({
+  root: {
+    fontSize: '18px',
+    textDecoration: 'none',
+    padding: '10px 16px',
+    borderRadius: '5px',
+    cursor: 'pointer',
+  },
+  primary: {},
+  secondary: {},
+});
 
 export const Button = ({
   children,
-  //   variant = 'primary',
+  variant = 'primary',
   href,
-  align = 'center',
-  style,
+  classes,
+  className,
 }: ButtonProps): JSX.Element => {
+  const styles = useStyles({ classes });
+  const buttonStyle = sx(styles.root, styles[variant]);
+
   return (
-    <td
-      align={align}
-      style={{
-        padding: '10px 25px',
-        wordBreak: 'break-word',
-      }}
-    >
-      <a
-        href={href}
-        target="_blank"
-        style={{
-          fontSize: '18px',
-          textDecoration: 'none',
-          padding: '10px 16px',
-          borderRadius: '5px',
-          cursor: 'pointer',
-          ...style,
-        }}
-      >
-        {children}
-      </a>
-    </td>
+    <a href={href} target="_blank" style={buttonStyle} className={className}>
+      {children}
+    </a>
   );
 };
