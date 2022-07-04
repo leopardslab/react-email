@@ -1,9 +1,10 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { CSSProperties } from 'react';
 
 import { Email } from '../Email/Email';
 import { Section } from '../Section/Section';
 import { Column } from '../Column/Column';
-import { Button } from './Button';
+import { Button, ButtonProps } from './Button';
 
 export default {
   component: Button,
@@ -20,14 +21,50 @@ const Template: ComponentStory<typeof Button> = (args) => (
   </Email>
 );
 
-export const Default = Template.bind({});
+const rootStyles: CSSProperties = {
+  fontSize: '18px',
+  textDecoration: 'none',
+  padding: '10px 16px',
+  borderRadius: '5px',
+  cursor: 'pointer',
+  backgroundColor: 'blue',
+  color: 'white',
+};
 
-Default.args = {
-  children: 'Click here',
+const defaultArgs: ButtonProps = {
+  children: 'Default Button',
   href: 'https://github.com/leopardslab/react-email',
   classes: {
-    root: {
-      backgroundColor: 'blue',
+    root: rootStyles,
+  },
+};
+
+export const Default = Template.bind({});
+Default.args = defaultArgs;
+
+export const Primary = Template.bind({});
+Primary.args = {
+  ...defaultArgs,
+  children: 'Primary Button',
+  variant: 'primary',
+  classes: {
+    root: rootStyles,
+    primary: {
+      backgroundColor: 'green',
+      color: 'white',
+    },
+  },
+};
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  ...defaultArgs,
+  children: 'Secondary Button',
+  variant: 'secondary',
+  classes: {
+    root: rootStyles,
+    secondary: {
+      backgroundColor: 'red',
       color: 'white',
     },
   },

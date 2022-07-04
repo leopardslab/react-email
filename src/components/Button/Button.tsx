@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, HTMLAttributeAnchorTarget } from 'react';
 import { BaseStyleProp } from '../types';
 import { makeStyles } from '../../utils/makeStyles';
 import { sx } from '../../utils/sx';
@@ -9,16 +9,11 @@ export interface ButtonProps extends BaseStyleProp<ButtonStyles> {
   children?: ReactNode;
   variant?: 'primary' | 'secondary';
   href: string;
+  target?: HTMLAttributeAnchorTarget;
 }
 
 const useStyles = makeStyles({
-  root: {
-    fontSize: '18px',
-    textDecoration: 'none',
-    padding: '10px 16px',
-    borderRadius: '5px',
-    cursor: 'pointer',
-  },
+  root: {},
   primary: {},
   secondary: {},
 });
@@ -27,6 +22,7 @@ export const Button = ({
   children,
   variant = 'primary',
   href,
+  target = '_blank',
   classes,
   className,
 }: ButtonProps): JSX.Element => {
@@ -34,7 +30,7 @@ export const Button = ({
   const buttonStyle = sx(styles.root, styles[variant]);
 
   return (
-    <a href={href} target="_blank" style={buttonStyle} className={className}>
+    <a href={href} target={target} style={buttonStyle} className={className}>
       {children}
     </a>
   );
