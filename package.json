@@ -20,9 +20,6 @@
   "files": [
     "dist"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "prepare": "husky install",
     "build": "tsc -p tsconfig.json",

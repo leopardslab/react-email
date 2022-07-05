@@ -9,6 +9,8 @@ on:
 jobs:
   check-and-build:
     runs-on: ${{ matrix.os }}
+    env:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
     strategy:
       matrix:
@@ -33,6 +35,9 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.ref == 'refs/heads/main' }}
     needs: [check-and-build]
+    env:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
@@ -43,6 +48,3 @@ jobs:
       - run: yarn
       - run: yarn build
       - run: yarn release
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
