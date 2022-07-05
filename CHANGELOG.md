@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/leopardslab/react-email/compare/v1.3.0...v1.3.1) (2022-07-05)
+
+
+### Bug Fixes
+
+* **ci-cd:** fix ci-cd bug with .npmrc ([#56](https://github.com/leopardslab/react-email/issues/56)) ([015e93a](https://github.com/leopardslab/react-email/commit/015e93add0890f8d81805388ae54f4b66230a262)), closes [#33](https://github.com/leopardslab/react-email/issues/33)
+
 # [1.3.0](https://github.com/leopardslab/react-email/compare/v1.2.1...v1.3.0) (2022-07-05)
 
 
