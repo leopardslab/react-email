@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/leopardslab/react-email/compare/v1.1.0...v1.2.0) (2022-07-05)
+
+
+### Features
+
+* **component:** add Link component ([#51](https://github.com/leopardslab/react-email/issues/51)) ([71390e7](https://github.com/leopardslab/react-email/commit/71390e796dfdd5efe2e713819d74fab60095dd03)), closes [#43](https://github.com/leopardslab/react-email/issues/43) [#43](https://github.com/leopardslab/react-email/issues/43) [#43](https://github.com/leopardslab/react-email/issues/43)
+
 # [1.1.0](https://github.com/leopardslab/react-email/compare/v1.0.1...v1.1.0) (2022-07-05)
 
 
