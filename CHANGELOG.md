@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/leopardslab/react-email/compare/v1.2.0...v1.2.1) (2022-07-05)
+
+
+### Bug Fixes
+
+* **package.json:** fix private package issue ([#55](https://github.com/leopardslab/react-email/issues/55)) ([b25071e](https://github.com/leopardslab/react-email/commit/b25071e71be6f3a83f2084ce0e585bdf23a08688))
+
 # [1.2.0](https://github.com/leopardslab/react-email/compare/v1.1.0...v1.2.0) (2022-07-05)
 
 
