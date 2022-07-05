@@ -1,5 +1,8 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
+import { Email } from '../Email/Email';
+import { Section } from '../Section/Section';
+import { Column } from '../Column/Column';
 import { Divider } from './Divider';
 
 export default {
@@ -8,34 +11,23 @@ export default {
 
 //“template” of how args map to rendering
 const Template: ComponentStory<typeof Divider> = (args) => (
-  <table>
-    <tbody>
-      <tr>
-        <td>This is Text 1</td>
-      </tr>
-
-      <Divider {...args} />
-
-      <tr>
-        <td>This is Text 2</td>
-      </tr>
-    </tbody>
-  </table>
+  <Email>
+    <Section>
+      <Column>
+        <h2>Hello World 1</h2>
+        <Divider {...args} />
+        <h2>Hello World 2</h2>
+      </Column>
+    </Section>
+  </Email>
 );
 
-export const Divider1 = Template.bind({});
-export const Divider2 = Template.bind({});
-export const Divider3 = Template.bind({});
+export const Default = Template.bind({});
 
-Divider1.args = {
-  width: '100%',
-};
-
-Divider2.args = {
+export const CustomStyles = Template.bind({});
+CustomStyles.args = {
+  align: 'center',
+  color: 'red',
+  size: '4px',
   width: '50%',
-};
-
-Divider3.args = {
-  width: '60%',
-  align: 'left',
 };
