@@ -1,31 +1,31 @@
-import { ReactNode, CSSProperties } from 'react';
+import { ReactNode, HTMLAttributeAnchorTarget } from 'react';
+import { BaseStyleProp } from '../types';
+import { makeStyles } from '../../utils/makeStyles';
 
-export interface LinkProps {
+type LinkStyles = 'root';
+
+export interface LinkProps extends BaseStyleProp<LinkStyles> {
   children?: ReactNode;
   href: string;
-  align?: 'left' | 'center' | 'right';
-  style?: CSSProperties;
+  target?: HTMLAttributeAnchorTarget;
 }
 
-export const Link = ({ children, href, align = 'left', style }: LinkProps): JSX.Element => {
+const useStyles = makeStyles({
+  root: {},
+});
+
+export const Link = ({
+  children,
+  href,
+  target = '_blank',
+  classes,
+  className,
+}: LinkProps): JSX.Element => {
+  const styles = useStyles({ classes });
+
   return (
-    <td
-      align={align}
-      style={{
-        padding: '10px 20px',
-        wordBreak: 'break-word',
-      }}
-    >
-      <a
-        href={href}
-        target="_blank"
-        style={{
-          fontSize: '18px',
-          ...style,
-        }}
-      >
-        {children}
-      </a>
-    </td>
+    <a href={href} target={target} style={styles.root} className={className}>
+      {children}
+    </a>
   );
 };
