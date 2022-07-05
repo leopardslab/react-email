@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/leopardslab/react-email/compare/v1.2.1...v1.3.0) (2022-07-05)
+
+
+### Features
+
+* **component:** add Divider component ([#52](https://github.com/leopardslab/react-email/issues/52)) ([eb301f4](https://github.com/leopardslab/react-email/commit/eb301f46575ac2fc420074517b90f1146f018872)), closes [#44](https://github.com/leopardslab/react-email/issues/44)
+
 ## [1.2.1](https://github.com/leopardslab/react-email/compare/v1.2.0...v1.2.1) (2022-07-05)
 
 
