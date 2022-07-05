@@ -12,5 +12,21 @@ const Template: ComponentStory<typeof Email> = (args) => <Email {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {
-  children: <h2>Hello world</h2>,
+  children: (
+    <table style={{ width: '100%' }}>
+      <tbody>
+        <tr>
+          <td>
+            <p style={{ margin: '0', fontSize: '30px' }}>Hello World</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  ),
+  classes: {
+    root: {
+      backgroundColor: 'gray',
+      color: 'white',
+    },
+  },
 };

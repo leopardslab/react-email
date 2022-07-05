@@ -1,7 +1,6 @@
 {
   "name": "@leopardslab/react-email",
-  "version": "1.0.1",
-  "private": "false",
+  "version": "1.2.1",
   "description": "React-based component and utility methods-based lightweight library to provide a common interface for email building",
   "author": {
     "name": "Leopards Lab",
@@ -15,12 +14,15 @@
     "url": "https://github.com/leopardslab/react-email/issues"
   },
   "homepage": "https://github.com/leopardslab/react-email#readme",
-  "license": "Apache License 2.0",
+  "license": "Apache-2.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "prepare": "husky install",
     "build": "tsc -p tsconfig.json",
