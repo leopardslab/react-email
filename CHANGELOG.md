@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/leopardslab/react-email/compare/v1.3.2...v1.4.0) (2022-07-06)
+
+
+### Features
+
+* **component:** Add Typography component ([#48](https://github.com/leopardslab/react-email/issues/48)) ([3a79c83](https://github.com/leopardslab/react-email/commit/3a79c838990c84e43666a0bcceccaccefb99ef9d)), closes [#41](https://github.com/leopardslab/react-email/issues/41)
+
 ## [1.3.2](https://github.com/leopardslab/react-email/compare/v1.3.1...v1.3.2) (2022-07-06)
 
 
