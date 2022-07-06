@@ -1,5 +1,19 @@
 # react-email
 
+## How to install
+
+**Using NPM**
+
+```
+npm install @leopardslab/react-email
+```
+
+**Using Yarn**
+
+```
+yarn add @leopardslab/react-email
+```
+
 ## Inspiration
 
 The idea of a React Component Library for Emails is not novel. There have been other implementations around for a while and we were inspired a lot by these solutions and many other generic Component Libraries. Following are a few of the amazing other implementations.

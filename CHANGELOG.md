@@ -1,3 +1,46 @@
+## [1.3.2](https://github.com/leopardslab/react-email/compare/v1.3.1...v1.3.2) (2022-07-06)
+
+
+### Bug Fixes
+
+* **prettier:** fix prettier issues ([1aa343b](https://github.com/leopardslab/react-email/commit/1aa343bb7af5e102e033ec269371930ab448bb37))
+
+## [1.3.1](https://github.com/leopardslab/react-email/compare/v1.3.0...v1.3.1) (2022-07-05)
+
+
+### Bug Fixes
+
+* **ci-cd:** fix ci-cd bug with .npmrc ([#56](https://github.com/leopardslab/react-email/issues/56)) ([015e93a](https://github.com/leopardslab/react-email/commit/015e93add0890f8d81805388ae54f4b66230a262)), closes [#33](https://github.com/leopardslab/react-email/issues/33)
+
+# [1.3.0](https://github.com/leopardslab/react-email/compare/v1.2.1...v1.3.0) (2022-07-05)
+
+
+### Features
+
+* **component:** add Divider component ([#52](https://github.com/leopardslab/react-email/issues/52)) ([eb301f4](https://github.com/leopardslab/react-email/commit/eb301f46575ac2fc420074517b90f1146f018872)), closes [#44](https://github.com/leopardslab/react-email/issues/44)
+
+## [1.2.1](https://github.com/leopardslab/react-email/compare/v1.2.0...v1.2.1) (2022-07-05)
+
+
+### Bug Fixes
+
+* **package.json:** fix private package issue ([#55](https://github.com/leopardslab/react-email/issues/55)) ([b25071e](https://github.com/leopardslab/react-email/commit/b25071e71be6f3a83f2084ce0e585bdf23a08688))
+
+# [1.2.0](https://github.com/leopardslab/react-email/compare/v1.1.0...v1.2.0) (2022-07-05)
+
+
+### Features
+
+* **component:** add Link component ([#51](https://github.com/leopardslab/react-email/issues/51)) ([71390e7](https://github.com/leopardslab/react-email/commit/71390e796dfdd5efe2e713819d74fab60095dd03)), closes [#43](https://github.com/leopardslab/react-email/issues/43) [#43](https://github.com/leopardslab/react-email/issues/43) [#43](https://github.com/leopardslab/react-email/issues/43)
+
+# [1.1.0](https://github.com/leopardslab/react-email/compare/v1.0.1...v1.1.0) (2022-07-05)
+
+
+### Features
+
+* **component:** add button component ([#47](https://github.com/leopardslab/react-email/issues/47)) ([c846451](https://github.com/leopardslab/react-email/commit/c846451cd573b5a92248291414c092372cdd57c2)), closes [#40](https://github.com/leopardslab/react-email/issues/40) [#40](https://github.com/leopardslab/react-email/issues/40) [#40](https://github.com/leopardslab/react-email/issues/40) [#40](https://github.com/leopardslab/react-email/issues/40)
+* **component:** add column and section ([#46](https://github.com/leopardslab/react-email/issues/46)) ([c89ad5e](https://github.com/leopardslab/react-email/commit/c89ad5e8a9c53809f5ca471a2f067b721f11b190)), closes [#39](https://github.com/leopardslab/react-email/issues/39) [#39](https://github.com/leopardslab/react-email/issues/39) [#39](https://github.com/leopardslab/react-email/issues/39) [#39](https://github.com/leopardslab/react-email/issues/39) [#39](https://github.com/leopardslab/react-email/issues/39) [#39](https://github.com/leopardslab/react-email/issues/39) [#39](https://github.com/leopardslab/react-email/issues/39) [#39](https://github.com/leopardslab/react-email/issues/39) [#39](https://github.com/leopardslab/react-email/issues/39) [#39](https://github.com/leopardslab/react-email/issues/39) [#39](https://github.com/leopardslab/react-email/issues/39) [#39](https://github.com/leopardslab/react-email/issues/39) [#39](https://github.com/leopardslab/react-email/issues/39) [#39](https://github.com/leopardslab/react-email/issues/39) [#39](https://github.com/leopardslab/react-email/issues/39)
+
 ## [1.0.1](https://github.com/leopardslab/react-email/compare/v1.0.0...v1.0.1) (2022-06-29)
 
 
