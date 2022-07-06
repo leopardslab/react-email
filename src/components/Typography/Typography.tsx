@@ -1,6 +1,12 @@
 import { CSSProperties, ReactNode } from 'react';
+import { BaseStyleProp } from '../types';
+import { makeStyles } from '../../utils/makeStyles';
+import { sx } from '../../utils/sx';
 
-export interface TypographyProps {
+type ButtonStyles = 'root';
+
+export interface TypographyProps extends BaseStyleProp<ButtonStyles> {
+  children: ReactNode;
   variant?:
     | 'h1'
     | 'h2'
@@ -13,40 +19,100 @@ export interface TypographyProps {
     | 'body1'
     | 'body2'
     | 'caption';
+  align?: CSSProperties['textAlign'];
+}
+
+interface ComponentMappingProps {
   children: ReactNode;
-  style?: CSSProperties;
-  align?: 'left' | 'center' | 'right';
+  styles?: CSSProperties;
+  className?: string;
 }
 
 const ComponentMapping = {
-  h1: (children: ReactNode, styles?: CSSProperties) => <h1 style={styles}>{children}</h1>,
-  h2: (children: ReactNode, styles?: CSSProperties) => <h2 style={styles}>{children}</h2>,
-  h3: (children: ReactNode, styles?: CSSProperties) => <h3 style={styles}>{children}</h3>,
-  h4: (children: ReactNode, styles?: CSSProperties) => <h4 style={styles}>{children}</h4>,
-  h5: (children: ReactNode, styles?: CSSProperties) => <h5 style={styles}>{children}</h5>,
-  h6: (children: ReactNode, styles?: CSSProperties) => <h6 style={styles}>{children}</h6>,
-  subtitle1: (children: ReactNode, styles?: CSSProperties) => <h6 style={styles}>{children}</h6>,
-  subtitle2: (children: ReactNode, styles?: CSSProperties) => <h6 style={styles}>{children}</h6>,
-  body1: (children: ReactNode, styles?: CSSProperties) => <p style={styles}>{children}</p>,
-  body2: (children: ReactNode, styles?: CSSProperties) => <p style={styles}>{children}</p>,
-  caption: (children: ReactNode, styles?: CSSProperties) => <p style={styles}>{children}</p>,
+  h1: ({ children, styles, className }: ComponentMappingProps) => (
+    <h1 style={styles} className={className}>
+      {children}
+    </h1>
+  ),
+  h2: ({ children, styles, className }: ComponentMappingProps) => (
+    <h2 style={styles} className={className}>
+      {children}
+    </h2>
+  ),
+  h3: ({ children, styles, className }: ComponentMappingProps) => (
+    <h3 style={styles} className={className}>
+      {children}
+    </h3>
+  ),
+  h4: ({ children, styles, className }: ComponentMappingProps) => (
+    <h4 style={styles} className={className}>
+      {children}
+    </h4>
+  ),
+  h5: ({ children, styles, className }: ComponentMappingProps) => (
+    <h5 style={styles} className={className}>
+      {children}
+    </h5>
+  ),
+  h6: ({ children, styles, className }: ComponentMappingProps) => (
+    <h6 style={styles} className={className}>
+      {children}
+    </h6>
+  ),
+  subtitle1: ({ children, styles, className }: ComponentMappingProps) => (
+    <h6 style={styles} className={className}>
+      {children}
+    </h6>
+  ),
+  subtitle2: ({ children, styles, className }: ComponentMappingProps) => (
+    <h6 style={styles} className={className}>
+      {children}
+    </h6>
+  ),
+  body1: ({ children, styles, className }: ComponentMappingProps) => (
+    <p style={styles} className={className}>
+      {children}
+    </p>
+  ),
+  body2: ({ children, styles, className }: ComponentMappingProps) => (
+    <p style={styles} className={className}>
+      {children}
+    </p>
+  ),
+  caption: ({ children, styles, className }: ComponentMappingProps) => (
+    <p style={styles} className={className}>
+      {children}
+    </p>
+  ),
 };
+
+const useStyles = makeStyles({
+  root: { margin: '0', padding: '0' },
+  h1: {},
+  h2: {},
+  h3: {},
+  h4: {},
+  h5: {},
+  h6: {},
+  subtitle1: {},
+  subtitle2: {},
+  body1: {},
+  body2: {},
+  caption: {},
+});
 
 export const Typography = ({
   children,
   variant = 'body1',
-  style,
+  classes,
+  className,
   align = 'left',
 }: TypographyProps): JSX.Element => {
-  return (
-    <td
-      align={align}
-      style={{
-        padding: '10px 20px',
-        wordBreak: 'break-word',
-      }}
-    >
-      {ComponentMapping[variant](children, { margin: '0', padding: '0', ...style })}
-    </td>
-  );
+  const styles = useStyles({ classes });
+
+  return ComponentMapping[variant]({
+    children,
+    styles: sx(styles.root, styles[variant], { textAlign: align }),
+    className,
+  });
 };
