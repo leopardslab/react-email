@@ -1,42 +1,61 @@
 import { CSSProperties } from 'react';
+import { BaseStyleProp } from '../types';
+import { makeStyles } from '../../utils/makeStyles';
+import { sx } from '../../utils/sx';
 
-export interface ImageProps {
+type LinkStyles = 'root' | 'image' | 'caption';
+
+export interface ImageProps extends BaseStyleProp<LinkStyles> {
   src: string;
   alt: string;
-  width: string | number;
-  height?: string | number;
-  style?: CSSProperties;
-  align?: 'left' | 'center' | 'right';
+  caption?: string;
+  width: CSSProperties['width'];
+  height?: CSSProperties['height'];
 }
+
+const useStyles = makeStyles({
+  root: { border: '0', display: 'block', outline: 'none' },
+  image: {},
+  caption: {},
+});
 
 export const Image = ({
   src,
   alt,
+  caption,
   width,
   height = 'auto',
-  style,
-  align = 'left',
+  classes,
+  className,
 }: ImageProps): JSX.Element => {
-  return (
-    <td
-      align={align}
-      style={{
-        padding: '10px 20px',
-        wordBreak: 'break-word',
-      }}
-    >
-      <img
-        height={height}
-        width={width}
-        src={src}
-        alt={alt}
-        style={{
-          border: '0',
-          display: 'block',
-          outline: 'none',
-          ...style,
-        }}
-      />
-    </td>
+  const styles = useStyles({ classes });
+
+  return caption ? (
+    <table>
+      <tr>
+        <td>
+          <img
+            className={className}
+            height={height}
+            width={width}
+            src={src}
+            alt={alt}
+            style={sx(styles.root, styles.image)}
+          />
+        </td>
+      </tr>
+      <tr>
+        <td style={styles.caption}>{caption}</td>
+      </tr>
+    </table>
+  ) : (
+    <img
+      className={className}
+      height={height}
+      width={width}
+      src={src}
+      alt={alt}
+      style={sx(styles.root, styles.image)}
+    />
   );
 };
