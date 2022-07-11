@@ -1,12 +1,14 @@
-import { ReactNode } from 'react';
-import { BaseStyleProp } from '../types';
+import { CSSProperties, ReactNode } from 'react';
 import { makeStyles } from '../../utils/makeStyles';
+import { sx } from '../../utils/sx';
+import { BaseStyleProp } from '../types';
 
 type ColumnStyles = 'root';
 
 export interface ColumnProps extends BaseStyleProp<ColumnStyles> {
   children?: ReactNode;
   align?: 'left' | 'center' | 'right';
+  verticalAlign?: CSSProperties['verticalAlign'];
 }
 
 const useStyles = makeStyles({
@@ -17,12 +19,13 @@ export const Column = ({
   children,
   className,
   classes,
-  align = 'left',
+  align = 'center',
+  verticalAlign = 'top',
 }: ColumnProps): JSX.Element => {
   const styles = useStyles({ classes });
 
   return (
-    <td className={className} style={styles.root} align={align}>
+    <td className={className} style={sx(styles.root, { verticalAlign })} align={align}>
       {children}
     </td>
   );
