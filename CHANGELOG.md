@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/leopardslab/react-email/compare/v1.4.0...v1.5.0) (2022-07-11)
+
+
+### Features
+
+* **component:** add Image component ([#50](https://github.com/leopardslab/react-email/issues/50)) ([739f603](https://github.com/leopardslab/react-email/commit/739f6037014d3d239bf6d97755f4ddf55cecbd4e)), closes [#42](https://github.com/leopardslab/react-email/issues/42) [#42](https://github.com/leopardslab/react-email/issues/42) [#42](https://github.com/leopardslab/react-email/issues/42) [#42](https://github.com/leopardslab/react-email/issues/42)
+
 # [1.4.0](https://github.com/leopardslab/react-email/compare/v1.3.2...v1.4.0) (2022-07-06)
 
 
