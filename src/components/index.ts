@@ -6,3 +6,4 @@ export * from './Link';
 export * from './Divider';
 export * from './Typography';
 export * from './Image';
+export * from './Preheader';
