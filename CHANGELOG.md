@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/leopardslab/react-email/compare/v1.5.0...v1.6.0) (2022-07-16)
+
+
+### Features
+
+* **component:** add Preheader ([#64](https://github.com/leopardslab/react-email/issues/64)) ([84884dc](https://github.com/leopardslab/react-email/commit/84884dc0451670bcb584528893549bcea7f232be)), closes [#63](https://github.com/leopardslab/react-email/issues/63) [#63](https://github.com/leopardslab/react-email/issues/63)
+
 # [1.5.0](https://github.com/leopardslab/react-email/compare/v1.4.0...v1.5.0) (2022-07-11)
 
 
