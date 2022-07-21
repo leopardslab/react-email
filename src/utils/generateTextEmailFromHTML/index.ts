@@ -1,0 +1,1 @@
+export { generateTextEmailFromHTML } from './generateTextEmailFromHTML';
