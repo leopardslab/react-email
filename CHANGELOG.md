@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/leopardslab/react-email/compare/v1.6.0...v1.7.0) (2022-07-21)
+
+
+### Features
+
+* **utils:** add text email generation utility methods ([#65](https://github.com/leopardslab/react-email/issues/65)) ([740c089](https://github.com/leopardslab/react-email/commit/740c08952762da1e842e124e32b9430c52b44938)), closes [#60](https://github.com/leopardslab/react-email/issues/60) [#60](https://github.com/leopardslab/react-email/issues/60) [#60](https://github.com/leopardslab/react-email/issues/60)
+
 # [1.6.0](https://github.com/leopardslab/react-email/compare/v1.5.0...v1.6.0) (2022-07-16)
 
 
