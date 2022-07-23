@@ -18,9 +18,12 @@
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */,
-    "outDir": "./dist/",
+    "baseUrl": "src",
+    "rootDir": "src",
+    "outDir": "./dist/esm",
     "lib": ["ESNext", "DOM"],
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "pretty": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "**/*.test.ts"]
