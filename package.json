@@ -15,16 +15,27 @@
   },
   "homepage": "https://github.com/leopardslab/react-email#readme",
   "license": "Apache-2.0",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/esm/index.d.ts"
+    }
+  },
   "scripts": {
     "prepare": "husky install",
-    "build": "tsc -p tsconfig.json",
+    "build": "rm -rf dist && yarn build:esm && yarn build:cjs && yarn fixup",
+    "build:esm": "tsc -p tsconfig.json",
+    "build:cjs": "tsc -p tsconfig.json --module commonjs --outDir dist/cjs --target es2015",
+    "fixup": "chmod u+rx ./fixup.sh && ./fixup.sh",
     "watch": "tsc --watch",
-    "test": "jest",
+    "test": "jest --testPathPattern=src",
     "cm": "cz -s",
     "lint": "eslint src/**",
     "lint:fix": "eslint --fix src/**",
