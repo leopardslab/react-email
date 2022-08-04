@@ -1,0 +1,1 @@
+### This directory shows the example on how to use the `generateEmail`, `generateTextEmail` methods from the [@leopardslab/react-email](https://www.npmjs.com/package/@leopardslab/react-email) library in Node.js with `ECMAScript Modules(ESM)` pattern ( i.e. `"type": "module",` in `package.json` with `import/export` syntax ).

@@ -1,5 +1,6 @@
 const { generateEmail, generateTextEmail } = require('@leopardslab/react-email');
-const { HelloEmail } = require('./lib/cjs');
+
+const { HelloEmail } = require('../lib/cjs');
 
 const htmlEmail = generateEmail(HelloEmail({ name: 'John' }));
 console.log(`HTML email: ${htmlEmail}`);
