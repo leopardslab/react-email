@@ -1,0 +1,1 @@
+### This directory shows the example on how to use the `generateEmail`, `generateTextEmail` methods from the [@leopardslab/react-email](https://www.npmjs.com/package/@leopardslab/react-email) library in Node.js with `CommonJS(CJS)` pattern ( i.e. `"type": "commonjs"` in `package.json` with `require` syntax ).

@@ -1,0 +1,17 @@
+{
+  "name": "react-email-example",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "yarn build",
+    "build": "rm -rf lib && yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc -p tsconfig.json",
+    "build:cjs": "tsc -p tsconfig.json --module commonjs --outDir lib/cjs --target es2015"
+  },
+  "dependencies": {
+    "@leopardslab/react-email": "file:leopardslab-react-email-1.7.0.tgz"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
