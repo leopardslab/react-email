@@ -21,13 +21,6 @@
   "files": [
     "dist"
   ],
-  "exports": {
-    ".": {
-      "import": "./dist/esm/index.js",
-      "require": "./dist/cjs/index.js",
-      "types": "./dist/esm/index.d.ts"
-    }
-  },
   "scripts": {
     "prepare": "husky install",
     "build": "rm -rf dist && yarn build:esm && yarn build:cjs && yarn fixup",
