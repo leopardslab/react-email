@@ -1,3 +1,15 @@
+# [1.8.0](https://github.com/leopardslab/react-email/compare/v1.7.1...v1.8.0) (2022-08-07)
+
+
+### Features
+
+* **example:** add example for ESM ([#79](https://github.com/leopardslab/react-email/issues/79)) ([c7e04f8](https://github.com/leopardslab/react-email/commit/c7e04f8797dd21a5741493bbaa81bb0b8add629d)), closes [#72](https://github.com/leopardslab/react-email/issues/72)
+
+
+### Performance Improvements
+
+* **tsconfig:** fix tsconfig ([#80](https://github.com/leopardslab/react-email/issues/80)) ([e370c09](https://github.com/leopardslab/react-email/commit/e370c09b21e73c497e2be1eb06e144c1380687bc)), closes [#75](https://github.com/leopardslab/react-email/issues/75)
+
 ## [1.7.1](https://github.com/leopardslab/react-email/compare/v1.7.0...v1.7.1) (2022-08-07)
 
 
