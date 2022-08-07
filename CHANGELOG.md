@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/leopardslab/react-email/compare/v1.8.0...v1.9.0) (2022-08-07)
+
+
+### Features
+
+* **component:** add Quote component ([#82](https://github.com/leopardslab/react-email/issues/82)) ([5a1a269](https://github.com/leopardslab/react-email/commit/5a1a269d56424c13cf7346a01ad213fbcfbb8778)), closes [#76](https://github.com/leopardslab/react-email/issues/76) [#76](https://github.com/leopardslab/react-email/issues/76)
+
 # [1.8.0](https://github.com/leopardslab/react-email/compare/v1.7.1...v1.8.0) (2022-08-07)
 
 
