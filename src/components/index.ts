@@ -7,3 +7,4 @@ export * from './Divider';
 export * from './Typography';
 export * from './Image';
 export * from './Preheader';
+export * from './Quote';
