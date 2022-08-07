@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/leopardslab/react-email/compare/v1.7.0...v1.7.1) (2022-08-07)
+
+
+### Bug Fixes
+
+* **package.json:** fix exports map ([#78](https://github.com/leopardslab/react-email/issues/78)) ([0716cb0](https://github.com/leopardslab/react-email/commit/0716cb0ef50cb640be5877465a5ab4b69009adec)), closes [#70](https://github.com/leopardslab/react-email/issues/70)
+
 # [1.7.0](https://github.com/leopardslab/react-email/compare/v1.6.0...v1.7.0) (2022-07-21)
 
 
