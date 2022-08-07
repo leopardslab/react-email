@@ -17,7 +17,7 @@ export const Quote = ({ children, classes, className }: QuoteProps) => {
 
   return (
     <div style={styles.root} className={className}>
-      {'>'} {children}
+      {children}
     </div>
   );
 };
