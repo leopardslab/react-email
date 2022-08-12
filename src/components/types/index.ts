@@ -2,7 +2,7 @@ import { CSSProperties } from 'react';
 
 export interface BaseStyleProp<T extends string> {
   /**
-   * The classes object to be merged with the base styles.
+   * Override or extend the styles applied to the component.
    */
   classes?: Partial<Record<T, CSSProperties>>;
   /**
