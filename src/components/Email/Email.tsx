@@ -4,7 +4,13 @@ import { makeStyles } from '../../utils/makeStyles';
 
 type EmailStyles = 'root';
 
+/**
+ * Interface for PropTypes for the `Email` component.
+ */
 export interface EmailProps extends BaseStyleProp<EmailStyles> {
+  /**
+   * The content of the component.
+   */
   children?: ReactNode;
 }
 
