@@ -24,7 +24,7 @@ export const Preheader = ({ text, classes, className }: PreheaderProps) => {
   const styles = useStyles({ classes });
 
   return (
-    <div style={styles.root} className={className}>
+    <div style={styles.root} className={className} id="preheader">
       {text}
     </div>
   );
