@@ -16,7 +16,7 @@ export const Quote = ({ children, classes, className }: QuoteProps) => {
   const styles = useStyles({ classes });
 
   return (
-    <div style={styles.root} className={className}>
+    <div style={styles.root} className={className} id="quote">
       {children}
     </div>
   );

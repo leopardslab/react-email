@@ -27,7 +27,7 @@ describe('generateTextEmail', () => {
       </Email>,
     );
 
-    expect(text.trim()).toBe('[Click Here] (https://github.com/leopardslab/react-email)');
+    expect(text.trim()).toBe('Click Here [https://github.com/leopardslab/react-email]');
   });
 
   test('should return expected text from the Image component', () => {
@@ -46,7 +46,7 @@ describe('generateTextEmail', () => {
       </Email>,
     );
 
-    const expectedText = `![Alt text] (https://images.unsplash.com/photo-1453728013993-6d66e9c9123a)\nThis is a caption`;
+    const expectedText = `Alt text [https://images.unsplash.com/photo-1453728013993-6d66e9c9123a]\nThis is a caption`;
 
     expect(text.trim()).toBe(expectedText);
   });

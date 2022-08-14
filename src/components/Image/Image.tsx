@@ -61,7 +61,9 @@ export const Image = ({
           </td>
         </tr>
         <tr style={styles.captionSection}>
-          <td style={sx(styles.caption, { textAlign: captionAlign })}>{caption}</td>
+          <td style={sx(styles.caption, { textAlign: captionAlign })} id="imageCaption">
+            {caption}
+          </td>
         </tr>
       </tbody>
     </table>
