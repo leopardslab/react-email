@@ -24,8 +24,8 @@
   "scripts": {
     "prepare": "husky install",
     "build": "rm -rf dist && yarn build:esm && yarn build:cjs && yarn fixup",
-    "build:esm": "tsc -p tsconfig.json",
-    "build:cjs": "tsc -p tsconfig.json --module commonjs --outDir dist/cjs --target es2015",
+    "build:esm": "tsc -p tsconfig-build.json",
+    "build:cjs": "tsc -p tsconfig-build.json --module commonjs --outDir dist/cjs --target es2015",
     "fixup": "chmod u+rx ./fixup.sh && ./fixup.sh",
     "watch": "tsc --watch",
     "test": "jest --testPathPattern=src",
