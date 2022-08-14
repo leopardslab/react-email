@@ -1,6 +1,6 @@
 {
   "name": "@leopardslab/react-email",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "description": "React-based component and utility methods-based lightweight library to provide a common interface for email building",
   "author": {
     "name": "Leopards Lab",
@@ -24,8 +24,8 @@
   "scripts": {
     "prepare": "husky install",
     "build": "rm -rf dist && yarn build:esm && yarn build:cjs && yarn fixup",
-    "build:esm": "tsc -p tsconfig.json",
-    "build:cjs": "tsc -p tsconfig.json --module commonjs --outDir dist/cjs --target es2015",
+    "build:esm": "tsc -p tsconfig-build.json",
+    "build:cjs": "tsc -p tsconfig-build.json --module commonjs --outDir dist/cjs --target es2015",
     "fixup": "chmod u+rx ./fixup.sh && ./fixup.sh",
     "watch": "tsc --watch",
     "test": "jest --testPathPattern=src",
@@ -48,7 +48,7 @@
     ]
   },
   "dependencies": {
-    "textversionjs": "^1.1.3"
+    "html-to-text": "^8.2.1"
   },
   "peerDependencies": {
     "react": ">=16.8",
@@ -72,11 +72,11 @@
     "@storybook/manager-webpack4": "6.5.9",
     "@storybook/react": "^6.5.9",
     "@storybook/testing-library": "^0.0.13",
+    "@types/html-to-text": "^8.1.0",
     "@types/jest": "^28.1.3",
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
-    "@types/textversionjs": "^1.1.1",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
     "babel-jest": "^28.1.1",
