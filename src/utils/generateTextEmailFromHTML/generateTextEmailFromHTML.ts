@@ -1,44 +1,29 @@
-import { convert } from 'html-to-text';
+import { convert, DomNode, FormatOptions, RecursiveCallback } from 'html-to-text';
+import { BlockTextBuilder } from 'html-to-text/lib/block-text-builder';
+
+const headingFormatter =
+  (level: number) =>
+  (
+    elem: DomNode,
+    walk: RecursiveCallback,
+    builder: BlockTextBuilder,
+    formatOptions: FormatOptions,
+  ) => {
+    builder.openBlock({ leadingLineBreaks: formatOptions.leadingLineBreaks || 1 });
+    builder.addInline('#'.repeat(level) + ' ');
+    walk(elem.children, builder);
+    builder.closeBlock({ trailingLineBreaks: formatOptions.trailingLineBreaks || 1 });
+  };
 
 export const generateTextEmailFromHTML = (html: string): string => {
   const plainText = convert(html, {
     formatters: {
-      h1Formatter: function (elem, walk, builder, formatOptions) {
-        builder.openBlock({ leadingLineBreaks: formatOptions.leadingLineBreaks || 1 });
-        builder.addInline('# ');
-        walk(elem.children, builder);
-        builder.closeBlock({ trailingLineBreaks: formatOptions.trailingLineBreaks || 1 });
-      },
-      h2Formatter: function (elem, walk, builder, formatOptions) {
-        builder.openBlock({ leadingLineBreaks: formatOptions.leadingLineBreaks || 1 });
-        builder.addInline('## ');
-        walk(elem.children, builder);
-        builder.closeBlock({ trailingLineBreaks: formatOptions.trailingLineBreaks || 1 });
-      },
-      h3Formatter: function (elem, walk, builder, formatOptions) {
-        builder.openBlock({ leadingLineBreaks: formatOptions.leadingLineBreaks || 1 });
-        builder.addInline('### ');
-        walk(elem.children, builder);
-        builder.closeBlock({ trailingLineBreaks: formatOptions.trailingLineBreaks || 1 });
-      },
-      h4Formatter: function (elem, walk, builder, formatOptions) {
-        builder.openBlock({ leadingLineBreaks: formatOptions.leadingLineBreaks || 1 });
-        builder.addInline('#### ');
-        walk(elem.children, builder);
-        builder.closeBlock({ trailingLineBreaks: formatOptions.trailingLineBreaks || 1 });
-      },
-      h5Formatter: function (elem, walk, builder, formatOptions) {
-        builder.openBlock({ leadingLineBreaks: formatOptions.leadingLineBreaks || 1 });
-        builder.addInline('##### ');
-        walk(elem.children, builder);
-        builder.closeBlock({ trailingLineBreaks: formatOptions.trailingLineBreaks || 1 });
-      },
-      h6Formatter: function (elem, walk, builder, formatOptions) {
-        builder.openBlock({ leadingLineBreaks: formatOptions.leadingLineBreaks || 1 });
-        builder.addInline('###### ');
-        walk(elem.children, builder);
-        builder.closeBlock({ trailingLineBreaks: formatOptions.trailingLineBreaks || 1 });
-      },
+      h1Formatter: headingFormatter(1),
+      h2Formatter: headingFormatter(2),
+      h3Formatter: headingFormatter(3),
+      h4Formatter: headingFormatter(4),
+      h5Formatter: headingFormatter(5),
+      h6Formatter: headingFormatter(6),
       captionFormatter: function (elem, walk, builder) {
         builder.openBlock({ leadingLineBreaks: 1 });
         walk(elem.children, builder);
