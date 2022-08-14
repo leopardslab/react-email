@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/leopardslab/react-email/compare/v1.9.0...v1.10.0) (2022-08-14)
+
+
+### Features
+
+* **textversion:** migrate from textversionjs to html-to-text ([#86](https://github.com/leopardslab/react-email/issues/86)) ([18c4b11](https://github.com/leopardslab/react-email/commit/18c4b1131e177a2f2640f8a3e4d5b0973fe1a8a0)), closes [#85](https://github.com/leopardslab/react-email/issues/85) [#85](https://github.com/leopardslab/react-email/issues/85)
+
 # [1.9.0](https://github.com/leopardslab/react-email/compare/v1.8.0...v1.9.0) (2022-08-07)
 
 
