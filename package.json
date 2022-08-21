@@ -1,6 +1,6 @@
 {
   "name": "@leopardslab/react-email",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "description": "React-based component and utility methods-based lightweight library to provide a common interface for email building",
   "author": {
     "name": "Leopards Lab",
@@ -37,7 +37,8 @@
     "lint-staged": "lint-staged",
     "release": "semantic-release --branches main",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o docs-build"
+    "build:storybook": "build-storybook -o storybook",
+    "build:typedoc": "typedoc"
   },
   "lint-staged": {
     "src/**": [
@@ -93,6 +94,7 @@
     "react-dom": "^18.2.0",
     "react-test-renderer": "^18.2.0",
     "semantic-release": "^19.0.3",
+    "typedoc": "^0.23.10",
     "typescript": "^4.7.3"
   },
   "husky": {

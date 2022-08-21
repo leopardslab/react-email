@@ -25,6 +25,10 @@
     "jsx": "react-jsx",
     "pretty": true
   },
+  "typedocOptions": {
+    "entryPoints": ["./src/"],
+    "out": "typedoc"
+  },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }

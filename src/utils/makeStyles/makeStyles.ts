@@ -19,6 +19,12 @@ const mergeStyles = (originalClasses: CSSClasses, overrideClasses: CSSClasses): 
   return newClasses;
 };
 
+/**
+ * Function which revokes a hook to combine and merge classes.
+ * @param classes - The classes to be merged with the override classes
+ * @returns The `useStyles` hook to combine and merge classes.
+ */
+
 export const makeStyles = (classes: CSSClasses) => {
   return (options?: overrideOptions, themeClasses?: CSSClasses) => {
     const overrideClasses = options?.classes;

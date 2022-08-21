@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/leopardslab/react-email/compare/v1.10.0...v1.11.0) (2022-08-21)
+
+
+### Features
+
+* **jsdoc:** add JSDoc comments ([#83](https://github.com/leopardslab/react-email/issues/83)) ([ed36fb3](https://github.com/leopardslab/react-email/commit/ed36fb30690dd564ee030daff42d65a8b93a05af)), closes [#61](https://github.com/leopardslab/react-email/issues/61) [#61](https://github.com/leopardslab/react-email/issues/61) [#61](https://github.com/leopardslab/react-email/issues/61) [#61](https://github.com/leopardslab/react-email/issues/61) [#61](https://github.com/leopardslab/react-email/issues/61) [#61](https://github.com/leopardslab/react-email/issues/61) [#61](https://github.com/leopardslab/react-email/issues/61) [#61](https://github.com/leopardslab/react-email/issues/61)
+
 # [1.10.0](https://github.com/leopardslab/react-email/compare/v1.9.0...v1.10.0) (2022-08-14)
 
 

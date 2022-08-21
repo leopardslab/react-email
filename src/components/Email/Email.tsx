@@ -7,7 +7,13 @@ import { defaultTheme } from '../DefaultTheme';
 
 export type EmailStyles = 'root';
 
+/**
+ * Interface for PropTypes for the `Email` component.
+ */
 export interface EmailProps extends BaseStyleProp<EmailStyles> {
+  /**
+   * The content of the component.
+   */
   children?: ReactNode;
   theme?: ThemeOptions;
 }

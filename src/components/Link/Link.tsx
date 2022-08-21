@@ -5,9 +5,22 @@ import { useTheme } from '../ThemeProvider';
 
 export type LinkStyles = 'root';
 
+/**
+ * Interface for PropTypes for the `Link` component.
+ */
 export interface LinkProps extends BaseStyleProp<LinkStyles> {
+  /**
+   * The content of the component.
+   */
   children?: ReactNode;
+  /**
+   * The URL to link to.
+   */
   href: string;
+  /**
+   * The target of the link.
+   * @default '_blank'
+   */
   target?: HTMLAttributeAnchorTarget;
 }
 

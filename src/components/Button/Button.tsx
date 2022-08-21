@@ -6,10 +6,28 @@ import { useTheme } from '../ThemeProvider';
 
 export type ButtonStyles = 'root' | 'primary' | 'secondary';
 
+/**
+ * Interface for PropTypes for the `Button` component.
+ */
 export interface ButtonProps extends BaseStyleProp<ButtonStyles> {
+  /**
+   * The content of the component.
+   */
   children?: ReactNode;
+  /**
+   * Applies the theme button styles.
+   * @default 'primary'
+   */
   variant?: 'primary' | 'secondary';
+  /**
+   * The URL to link to when the button is clicked.
+   * An `a` element will be used as the root node.
+   */
   href: string;
+  /**
+   * The target of the link.
+   * @default '_blank'
+   */
   target?: HTMLAttributeAnchorTarget;
 }
 

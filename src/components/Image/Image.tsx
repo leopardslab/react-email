@@ -14,12 +14,35 @@ export type ImageStyles =
   | 'captionSection'
   | 'imageColumn';
 
+/**
+ * Interface for PropTypes for the `Image` component.
+ */
 export interface ImageProps extends BaseStyleProp<ImageStyles> {
+  /**
+   * The URL or filepath of the image.
+   */
   src: string;
+  /**
+   * The alt text for the image.
+   */
   alt: string;
+  /**
+   * The caption for the image.
+   */
   caption?: string;
+  /**
+   * The width of the image.
+   */
   width: CSSProperties['width'];
+  /**
+   * The height of the image.
+   * @default 'auto'
+   */
   height?: CSSProperties['height'];
+  /**
+   * The alignment of the caption.
+   * @default 'center'
+   */
   captionAlign?: 'left' | 'center' | 'right';
 }
 

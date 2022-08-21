@@ -5,7 +5,13 @@ import { useTheme } from '../ThemeProvider';
 
 export type QuoteStyles = 'root';
 
+/**
+ * Interface for PropTypes for the `Quote` component.
+ */
 export interface QuoteProps extends BaseStyleProp<QuoteStyles> {
+  /**
+   * The content of the component.
+   */
   children?: ReactNode;
 }
 

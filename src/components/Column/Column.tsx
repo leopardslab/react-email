@@ -6,9 +6,23 @@ import { useTheme } from '../ThemeProvider';
 
 export type ColumnStyles = 'root';
 
+/**
+ * Interface for PropTypes for the `Column` component.
+ */
 export interface ColumnProps extends BaseStyleProp<ColumnStyles> {
+  /**
+   * The content of the component.
+   */
   children?: ReactNode;
+  /**
+   * The alignment of the children.
+   * @default 'center'
+   */
   align?: 'left' | 'center' | 'right';
+  /**
+   * The vertical alignment of the children.
+   * @default 'top'
+   */
   verticalAlign?: CSSProperties['verticalAlign'];
 }
 

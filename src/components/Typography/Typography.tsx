@@ -6,8 +6,18 @@ import { useTheme } from '../ThemeProvider';
 
 export type TypographyStyles = 'root';
 
+/**
+ * Interface for PropTypes for the `Typography` component.
+ */
 export interface TypographyProps extends BaseStyleProp<TypographyStyles> {
+  /**
+   * The content of the component.
+   */
   children: ReactNode;
+  /**
+   * Applies the theme typography styles.
+   * @default 'body1'
+   */
   variant?:
     | 'h1'
     | 'h2'
@@ -20,6 +30,10 @@ export interface TypographyProps extends BaseStyleProp<TypographyStyles> {
     | 'body1'
     | 'body2'
     | 'caption';
+  /**
+   * Set the text-align on the component.
+   * @default 'left'
+   */
   align?: CSSProperties['textAlign'];
 }
 

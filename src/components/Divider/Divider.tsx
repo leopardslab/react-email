@@ -6,11 +6,33 @@ import { useTheme } from '../ThemeProvider';
 
 export type DividerStyles = 'root';
 
+/**
+ * Interface for PropTypes for the `Divider` component.
+ */
 export interface DividerProps extends BaseStyleProp<DividerStyles> {
+  /**
+   * The alignment of the divider.
+   * @default 'left'
+   */
   align?: 'left' | 'center' | 'right';
+  /**
+   * The color of the divider.
+   */
   color?: CSSProperties['borderColor'];
+  /**
+   * The type of the divider.
+   * @default 'solid'
+   */
   type?: CSSProperties['borderStyle'];
+  /**
+   * The thickness of the divider.
+   * @default '1px'
+   */
   size?: CSSProperties['borderWidth'];
+  /**
+   * The width of the divider.
+   * @default '100%'
+   */
   width?: CSSProperties['width'];
 }
 
