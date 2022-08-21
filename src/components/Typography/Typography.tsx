@@ -5,8 +5,18 @@ import { sx } from '../../utils/sx';
 
 type ButtonStyles = 'root';
 
+/**
+ * Interface for PropTypes for the `Typography` component.
+ */
 export interface TypographyProps extends BaseStyleProp<ButtonStyles> {
+  /**
+   * The content of the component.
+   */
   children: ReactNode;
+  /**
+   * Applies the theme typography styles.
+   * @default 'body1'
+   */
   variant?:
     | 'h1'
     | 'h2'
@@ -19,6 +29,10 @@ export interface TypographyProps extends BaseStyleProp<ButtonStyles> {
     | 'body1'
     | 'body2'
     | 'caption';
+  /**
+   * Set the text-align on the component.
+   * @default 'left'
+   */
   align?: CSSProperties['textAlign'];
 }
 

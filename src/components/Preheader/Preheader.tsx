@@ -3,7 +3,13 @@ import { BaseStyleProp } from '../types';
 
 type PreheaderStyles = 'root';
 
+/**
+ * Interface for PropTypes for the `Preheader` component.
+ */
 export interface PreheaderProps extends BaseStyleProp<PreheaderStyles> {
+  /**
+   * The text for the preheader.
+   */
   text: string;
 }
 

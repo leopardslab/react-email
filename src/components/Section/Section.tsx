@@ -5,8 +5,18 @@ import { BaseStyleProp } from '../types';
 
 type SectionStyles = 'root' | 'body' | 'row';
 
+/**
+ * Interface for PropTypes for the `Section` component.
+ */
 export interface SectionProps extends BaseStyleProp<SectionStyles> {
+  /**
+   * The content of the component.
+   */
   children?: ReactNode;
+  /**
+   * If `true`, the `section` will take up the full width of its container.
+   * @default true
+   */
   fullWidth?: boolean;
 }
 
