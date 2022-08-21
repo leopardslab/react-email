@@ -31,7 +31,7 @@ Default.args = {
   theme: {
     email: {
       root: {
-        backgroundColor: 'green',
+        backgroundColor: 'lightgray',
       },
     },
   },

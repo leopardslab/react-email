@@ -15,6 +15,9 @@ export interface EmailProps extends BaseStyleProp<EmailStyles> {
    * The content of the component.
    */
   children?: ReactNode;
+  /**
+   * Applies the custom theme to the whole layout.
+   */
   theme?: ThemeOptions;
 }
 

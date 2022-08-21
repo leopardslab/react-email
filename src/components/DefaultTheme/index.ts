@@ -11,19 +11,55 @@ import type { ImageStyles } from '../Image/Image';
 import type { PreheaderStyles } from '../Preheader/Preheader';
 import type { QuoteStyles } from '../Quote/Quote';
 
+/**
+ * Interface for the Deafult and Custom Theme.
+ */
 export interface ThemeOptions {
+  /**
+   * Theme for the `Email` component.
+   */
   email?: { [key in EmailStyles]?: CSSProperties };
+  /**
+   * Theme for the `Section` component.
+   */
   section?: { [key in SectionStyles]?: CSSProperties };
+  /**
+   * Theme for the `Column` component.
+   */
   column?: { [key in ColumnStyles]?: CSSProperties };
+  /**
+   * Theme for the `Button` component.
+   */
   button?: { [key in ButtonStyles]?: CSSProperties };
+  /**
+   * Theme for the `Link` component.
+   */
   link?: { [key in LinkStyles]?: CSSProperties };
+  /**
+   * Theme for the `Divider` component.
+   */
   divider?: { [key in DividerStyles]?: CSSProperties };
+  /**
+   * Theme for the `Typography` component.
+   */
   typography?: { [key in TypographyStyles]?: CSSProperties };
+  /**
+   * Theme for the `Image` component.
+   */
   image?: { [key in ImageStyles]?: CSSProperties };
+  /**
+   * Theme for the `Preheader` component.
+   */
   preheader?: { [key in PreheaderStyles]?: CSSProperties };
+  /**
+   * Theme for the `Quote` component.
+   */
   quote?: { [key in QuoteStyles]?: CSSProperties };
 }
 
+/**
+ * Default theme for the whole layout.
+ */
 export const defaultTheme: ThemeOptions = {
   email: { root: {} },
   section: { root: {}, body: {}, row: {} },
