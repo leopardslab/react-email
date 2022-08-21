@@ -1,9 +1,10 @@
 import { CSSProperties } from 'react';
 import { makeStyles } from '../../utils/makeStyles';
 import { sx } from '../../utils/sx';
-import { BaseStyleProp } from '../types';
+import type { BaseStyleProp } from '../types';
+import { useTheme } from '../ThemeProvider';
 
-type DividerStyles = 'root';
+export type DividerStyles = 'root';
 
 export interface DividerProps extends BaseStyleProp<DividerStyles> {
   align?: 'left' | 'center' | 'right';
@@ -32,7 +33,8 @@ export const Divider = ({
   size = '1px',
   width = '100%',
 }: DividerProps): JSX.Element => {
-  const styles = useStyles({ classes });
+  const themeClasses = useTheme('divider');
+  const styles = useStyles({ classes }, themeClasses);
   const hrStyles = sx(styles.root, alignStyles[align], {
     borderTop: `${size} ${type} ${color}`,
     width: width,

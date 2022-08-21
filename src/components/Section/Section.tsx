@@ -1,9 +1,10 @@
 import { ReactNode } from 'react';
 import { makeStyles } from '../../utils/makeStyles';
 import { sx } from '../../utils/sx';
-import { BaseStyleProp } from '../types';
+import type { BaseStyleProp } from '../types';
+import { useTheme } from '../ThemeProvider';
 
-type SectionStyles = 'root' | 'body' | 'row';
+export type SectionStyles = 'root' | 'body' | 'row';
 
 export interface SectionProps extends BaseStyleProp<SectionStyles> {
   children?: ReactNode;
@@ -22,7 +23,8 @@ export const Section = ({
   classes,
   fullWidth = true,
 }: SectionProps): JSX.Element => {
-  const styles = useStyles({ classes });
+  const themeClasses = useTheme('section');
+  const styles = useStyles({ classes }, themeClasses);
 
   return (
     <table

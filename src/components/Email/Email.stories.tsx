@@ -25,8 +25,14 @@ Default.args = {
   ),
   classes: {
     root: {
-      backgroundColor: 'gray',
       color: 'white',
+    },
+  },
+  theme: {
+    email: {
+      root: {
+        backgroundColor: 'green',
+      },
     },
   },
 };

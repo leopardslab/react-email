@@ -1,8 +1,9 @@
 import { ReactNode } from 'react';
 import { makeStyles } from '../../utils/makeStyles';
-import { BaseStyleProp } from '../types';
+import type { BaseStyleProp } from '../types';
+import { useTheme } from '../ThemeProvider';
 
-type QuoteStyles = 'root';
+export type QuoteStyles = 'root';
 
 export interface QuoteProps extends BaseStyleProp<QuoteStyles> {
   children?: ReactNode;
@@ -13,7 +14,8 @@ const useStyles = makeStyles({
 });
 
 export const Quote = ({ children, classes, className }: QuoteProps) => {
-  const styles = useStyles({ classes });
+  const themeClasses = useTheme('quote');
+  const styles = useStyles({ classes }, themeClasses);
 
   return (
     <div style={styles.root} className={className} id="quote">

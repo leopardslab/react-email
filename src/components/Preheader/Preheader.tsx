@@ -1,7 +1,8 @@
 import { makeStyles } from '../../utils/makeStyles';
-import { BaseStyleProp } from '../types';
+import type { BaseStyleProp } from '../types';
+import { useTheme } from '../ThemeProvider';
 
-type PreheaderStyles = 'root';
+export type PreheaderStyles = 'root';
 
 export interface PreheaderProps extends BaseStyleProp<PreheaderStyles> {
   text: string;
@@ -21,7 +22,8 @@ const useStyles = makeStyles({
 });
 
 export const Preheader = ({ text, classes, className }: PreheaderProps) => {
-  const styles = useStyles({ classes });
+  const themeClasses = useTheme('preheader');
+  const styles = useStyles({ classes }, themeClasses);
 
   return (
     <div style={styles.root} className={className} id="preheader">

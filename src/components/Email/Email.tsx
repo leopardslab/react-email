@@ -1,11 +1,15 @@
 import { ReactNode } from 'react';
 import { BaseStyleProp } from '../types';
 import { makeStyles } from '../../utils/makeStyles';
+import { ThemeProvider, useTheme } from '../ThemeProvider';
+import type { ThemeOptions } from '../DefaultTheme';
+import { defaultTheme } from '../DefaultTheme';
 
-type EmailStyles = 'root';
+export type EmailStyles = 'root';
 
 export interface EmailProps extends BaseStyleProp<EmailStyles> {
   children?: ReactNode;
+  theme?: ThemeOptions;
 }
 
 const useStyles = makeStyles({
@@ -15,8 +19,21 @@ const useStyles = makeStyles({
   },
 });
 
-export const Email = ({ children, className, classes }: EmailProps): JSX.Element => {
-  const styles = useStyles({ classes });
+export const Email = ({ theme = defaultTheme, ...rest }: EmailProps) => {
+  return (
+    <ThemeProvider theme={theme}>
+      <EmailComponent {...rest} />
+    </ThemeProvider>
+  );
+};
+
+const EmailComponent = ({
+  children,
+  className,
+  classes,
+}: Omit<EmailProps, 'theme'>): JSX.Element => {
+  const themeClasses = useTheme('email');
+  const styles = useStyles({ classes }, themeClasses);
 
   return (
     <div style={styles.root} className={className}>

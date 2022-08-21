@@ -1,8 +1,9 @@
 import { ReactNode, HTMLAttributeAnchorTarget } from 'react';
-import { BaseStyleProp } from '../types';
+import type { BaseStyleProp } from '../types';
 import { makeStyles } from '../../utils/makeStyles';
+import { useTheme } from '../ThemeProvider';
 
-type LinkStyles = 'root';
+export type LinkStyles = 'root';
 
 export interface LinkProps extends BaseStyleProp<LinkStyles> {
   children?: ReactNode;
@@ -21,7 +22,8 @@ export const Link = ({
   classes,
   className,
 }: LinkProps): JSX.Element => {
-  const styles = useStyles({ classes });
+  const themeClasses = useTheme('link');
+  const styles = useStyles({ classes }, themeClasses);
 
   return (
     <a href={href} target={target} style={styles.root} className={className}>

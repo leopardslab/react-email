@@ -1,9 +1,10 @@
 import { ReactNode, HTMLAttributeAnchorTarget } from 'react';
-import { BaseStyleProp } from '../types';
+import type { BaseStyleProp } from '../types';
 import { makeStyles } from '../../utils/makeStyles';
 import { sx } from '../../utils/sx';
+import { useTheme } from '../ThemeProvider';
 
-type ButtonStyles = 'root' | 'primary' | 'secondary';
+export type ButtonStyles = 'root' | 'primary' | 'secondary';
 
 export interface ButtonProps extends BaseStyleProp<ButtonStyles> {
   children?: ReactNode;
@@ -26,7 +27,8 @@ export const Button = ({
   classes,
   className,
 }: ButtonProps): JSX.Element => {
-  const styles = useStyles({ classes });
+  const themeClasses = useTheme('button');
+  const styles = useStyles({ classes }, themeClasses);
   const buttonStyle = sx(styles.root, styles[variant]);
 
   return (
