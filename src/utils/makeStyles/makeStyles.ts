@@ -26,12 +26,9 @@ const mergeStyles = (originalClasses: CSSClasses, overrideClasses: CSSClasses): 
  */
 
 export const makeStyles = (classes: CSSClasses) => {
-  return (options?: overrideOptions) => {
+  return (options?: overrideOptions, themeClasses?: CSSClasses) => {
     const overrideClasses = options?.classes;
-    if (!overrideClasses) {
-      return classes;
-    }
 
-    return mergeStyles(classes, overrideClasses);
+    return mergeStyles(mergeStyles(classes, themeClasses ?? {}), overrideClasses ?? {});
   };
 };

@@ -1,9 +1,10 @@
 import { CSSProperties } from 'react';
 import { makeStyles } from '../../utils/makeStyles';
 import { sx } from '../../utils/sx';
-import { BaseStyleProp } from '../types';
+import type { BaseStyleProp } from '../types';
+import { useTheme } from '../ThemeProvider';
 
-type ImageStyles =
+export type ImageStyles =
   | 'root'
   | 'table'
   | 'body'
@@ -66,7 +67,8 @@ export const Image = ({
   className,
   captionAlign = 'center',
 }: ImageProps): JSX.Element => {
-  const styles = useStyles({ classes });
+  const themeClasses = useTheme('image');
+  const styles = useStyles({ classes }, themeClasses);
 
   return caption ? (
     <table cellPadding="0" cellSpacing="0" role="presentation" style={styles.table}>

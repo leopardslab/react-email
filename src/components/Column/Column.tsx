@@ -1,9 +1,10 @@
 import { CSSProperties, ReactNode } from 'react';
 import { makeStyles } from '../../utils/makeStyles';
 import { sx } from '../../utils/sx';
-import { BaseStyleProp } from '../types';
+import type { BaseStyleProp } from '../types';
+import { useTheme } from '../ThemeProvider';
 
-type ColumnStyles = 'root';
+export type ColumnStyles = 'root';
 
 /**
  * Interface for PropTypes for the `Column` component.
@@ -36,7 +37,8 @@ export const Column = ({
   align = 'center',
   verticalAlign = 'top',
 }: ColumnProps): JSX.Element => {
-  const styles = useStyles({ classes });
+  const themeClasses = useTheme('column');
+  const styles = useStyles({ classes }, themeClasses);
 
   return (
     <td className={className} style={sx(styles.root, { verticalAlign })} align={align}>

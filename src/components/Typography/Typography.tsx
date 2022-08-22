@@ -1,14 +1,15 @@
 import { CSSProperties, ReactNode } from 'react';
-import { BaseStyleProp } from '../types';
+import type { BaseStyleProp } from '../types';
 import { makeStyles } from '../../utils/makeStyles';
 import { sx } from '../../utils/sx';
+import { useTheme } from '../ThemeProvider';
 
-type ButtonStyles = 'root';
+export type TypographyStyles = 'root';
 
 /**
  * Interface for PropTypes for the `Typography` component.
  */
-export interface TypographyProps extends BaseStyleProp<ButtonStyles> {
+export interface TypographyProps extends BaseStyleProp<TypographyStyles> {
   /**
    * The content of the component.
    */
@@ -122,7 +123,8 @@ export const Typography = ({
   className,
   align = 'left',
 }: TypographyProps): JSX.Element => {
-  const styles = useStyles({ classes });
+  const themeClasses = useTheme('typography');
+  const styles = useStyles({ classes }, themeClasses);
 
   return ComponentMapping[variant]({
     children,
