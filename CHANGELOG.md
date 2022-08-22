@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/leopardslab/react-email/compare/v1.11.0...v1.12.0) (2022-08-22)
+
+
+### Features
+
+* **theme:** add Theme support ([#89](https://github.com/leopardslab/react-email/issues/89)) ([05544f5](https://github.com/leopardslab/react-email/commit/05544f55b46951dc2e2cd4b287e245d1c1d5d9eb)), closes [#88](https://github.com/leopardslab/react-email/issues/88)
+
 # [1.11.0](https://github.com/leopardslab/react-email/compare/v1.10.0...v1.11.0) (2022-08-21)
 
 
