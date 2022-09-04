@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Column Default smoke-test 1`] = `
+<div style="margin: 0px auto; max-width: 600px;">
+  <table cellpadding="0"
+         cellspacing="0"
+         role="presentation"
+         style="border: 0px; vertical-align: top; width: 100%;"
+  >
+    <tbody>
+      <tr>
+        <td align="center"
+            style="background-color: red; color: white; vertical-align: top;"
+        >
+          <p style="margin: 0px; font-size: 30px;">
+            Hello World
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

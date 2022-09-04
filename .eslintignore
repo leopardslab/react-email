@@ -4,3 +4,4 @@ build/
 dist/
 docs/
 example/
+*.snap
