@@ -6,3 +6,4 @@ docs/
 docs-build/
 CHANGELOG.md
 example/lib/
+*.snap

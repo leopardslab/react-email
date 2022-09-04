@@ -6,3 +6,4 @@ docs/
 docs-build/
 docusaurus/
 example/
+*.snap
