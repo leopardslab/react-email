@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Email Default smoke-test 1`] = `
+<div style="margin: 0px auto; max-width: 600px; background-color: lightgray; color: white;">
+  <table style="width: 100%;">
+    <tbody>
+      <tr>
+        <td>
+          <p style="margin: 0px; font-size: 30px;">
+            Hello World
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

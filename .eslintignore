@@ -5,3 +5,4 @@ dist/
 docs/
 docusaurus/
 example/
+*.snap
