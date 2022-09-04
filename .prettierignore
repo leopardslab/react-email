@@ -3,5 +3,6 @@ public/
 build/
 dist/
 docs/
+docs-build/
 CHANGELOG.md
 example/lib/

@@ -6,4 +6,12 @@ module.exports = {
     '@storybook/addon-interactions',
   ],
   framework: '@storybook/react',
+  managerHead: (head, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      return `
+      ${head}
+      <base href="/storybook/">
+      `;
+    }
+  },
 };
