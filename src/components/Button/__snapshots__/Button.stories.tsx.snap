@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Button Default smoke-test 1`] = `
+<div style="margin: 0px auto; max-width: 600px;">
+  <table cellpadding="0"
+         cellspacing="0"
+         role="presentation"
+         style="border: 0px; vertical-align: top; width: 100%;"
+  >
+    <tbody>
+      <tr>
+        <td align="center"
+            style="vertical-align: top;"
+        >
+          <a href="https://github.com/leopardslab/react-email"
+             target="_blank"
+             style="font-size: 18px; text-decoration: none; padding: 10px 16px; border-radius: 5px; cursor: pointer; background-color: blue; color: white;"
+          >
+            Default Button
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`components/Button Primary smoke-test 1`] = `
+<div style="margin: 0px auto; max-width: 600px;">
+  <table cellpadding="0"
+         cellspacing="0"
+         role="presentation"
+         style="border: 0px; vertical-align: top; width: 100%;"
+  >
+    <tbody>
+      <tr>
+        <td align="center"
+            style="vertical-align: top;"
+        >
+          <a href="https://github.com/leopardslab/react-email"
+             target="_blank"
+             style="font-size: 18px; text-decoration: none; padding: 10px 16px; border-radius: 5px; cursor: pointer; background-color: green; color: white;"
+          >
+            Primary Button
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`components/Button Secondary smoke-test 1`] = `
+<div style="margin: 0px auto; max-width: 600px;">
+  <table cellpadding="0"
+         cellspacing="0"
+         role="presentation"
+         style="border: 0px; vertical-align: top; width: 100%;"
+  >
+    <tbody>
+      <tr>
+        <td align="center"
+            style="vertical-align: top;"
+        >
+          <a href="https://github.com/leopardslab/react-email"
+             target="_blank"
+             style="font-size: 18px; text-decoration: none; padding: 10px 16px; border-radius: 5px; cursor: pointer; background-color: red; color: white;"
+          >
+            Secondary Button
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

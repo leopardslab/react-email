@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/Quote Default smoke-test 1`] = `
+<div id="quote"
+     style="margin: 0px; padding: 0px;"
+>
+  This is a Text Quote
+</div>
+`;
