@@ -70,7 +70,7 @@ export const defaultTheme: ThemeOptions = {
     secondary: {},
   },
   link: { root: {} },
-  divider: { root: {} },
+  divider: { root: { borderTopColor: 'gray', borderRadius: '5px' } },
   typography: { root: {} },
   image: {
     root: {},
