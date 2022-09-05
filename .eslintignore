@@ -3,5 +3,6 @@ public/
 build/
 dist/
 docs/
+docusaurus/
 example/
 *.snap
