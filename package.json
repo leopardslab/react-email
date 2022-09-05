@@ -39,7 +39,8 @@
     "release": "semantic-release --branches main",
     "storybook": "start-storybook -p 6006",
     "build:storybook": "build-storybook -o storybook",
-    "build:typedoc": "typedoc"
+    "build:typedoc": "typedoc",
+    "build:docs": "chmod u+rx ./build-docs.sh && ./build-docs.sh"
   },
   "lint-staged": {
     "src/**": [

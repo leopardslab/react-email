@@ -111,3 +111,6 @@ package-lock.json
 
 # Example lib folder
 example/lib/
+
+# Docs build folder
+docs-build/
