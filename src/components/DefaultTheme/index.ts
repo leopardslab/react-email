@@ -65,9 +65,21 @@ export const defaultTheme: ThemeOptions = {
   section: { root: {}, body: {}, row: {} },
   column: { root: {} },
   button: {
-    root: {},
-    primary: {},
-    secondary: {},
+    root: {
+      fontSize: '18px',
+      textDecoration: 'none',
+      padding: '10px 16px',
+      borderRadius: '5px',
+      cursor: 'pointer',
+    },
+    primary: {
+      backgroundColor: '#007bff',
+      color: '#fff',
+    },
+    secondary: {
+      backgroundColor: '#6c757d',
+      color: '#fff',
+    },
   },
   link: { root: {} },
   divider: { root: {} },
