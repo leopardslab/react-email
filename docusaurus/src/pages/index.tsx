@@ -18,6 +18,12 @@ function HomepageHeader() {
           <Link className="button button--secondary button--lg" to="/docs/intro">
             React Email Tutorial - 5min ⏱️
           </Link>
+          <Link className="button button--secondary button--lg" to="/storybook">
+            React Email Storybook 🚀
+          </Link>
+          <Link className="button button--secondary button--lg" to="/typedoc/ ">
+            TypeDoc Documentation 📋
+          </Link>
         </div>
       </div>
     </header>
