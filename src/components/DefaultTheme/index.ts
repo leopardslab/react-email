@@ -69,7 +69,7 @@ export const defaultTheme: ThemeOptions = {
     primary: {},
     secondary: {},
   },
-  link: { root: {} },
+  link: { root: { color: '#0000EE', textDecoration: 'none' } },
   divider: { root: {} },
   typography: { root: {} },
   image: {

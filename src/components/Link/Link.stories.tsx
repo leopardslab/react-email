@@ -27,9 +27,16 @@ export const Default = Template.bind({});
 Default.args = {
   children: 'Click here',
   href: 'https://github.com/leopardslab/react-email',
+};
+
+export const CustomStyles = Template.bind({});
+CustomStyles.args = {
+  children: 'Click here',
+  href: 'https://github.com/leopardslab/react-email',
   classes: {
     root: {
       color: 'red',
+      textDecoration: 'underline',
     },
   },
 };
