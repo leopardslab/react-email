@@ -64,11 +64,9 @@ echo "Find and replace the absolute path using sed ..."
 
 sed -re 's@<(\w+)(.*)href="([^http].*)"(.*)>@<\1\2href="/typedoc\/\3"\4>@g' -i ./typedoc/index.html
 sed -re 's@"(assets/.+)"@"/typedoc/\1"@g' -i ./typedoc/index.html
-sed -i 's+assets/search.js+typedoc/assets/search.js+g' ./typedoc/index.html
 
 sed -re 's@<(\w+)(.*)href="([^http].*)"(.*)>@<\1\2href="/typedoc\/\3"\4>@g' -i ./typedoc/modules.html
 sed -re 's@"(assets/.+)"@"/typedoc/\1"@g' -i ./typedoc/modules.html
-sed -i 's+assets/search.js+typedoc/assets/search.js+g' ./typedoc/modules.html
 
 echo "Find and replace the absolute path using sed Done!"
 
