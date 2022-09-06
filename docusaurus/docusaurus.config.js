@@ -11,7 +11,7 @@ const config = {
     'React-based component and utility methods-based lightweight library to provide a common interface for email building',
   url: 'https://leopardslab.org',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
