@@ -65,12 +65,24 @@ export const defaultTheme: ThemeOptions = {
   section: { root: {}, body: {}, row: {} },
   column: { root: {} },
   button: {
-    root: {},
-    primary: {},
-    secondary: {},
+    root: {
+      fontSize: '18px',
+      textDecoration: 'none',
+      padding: '10px 16px',
+      borderRadius: '5px',
+      cursor: 'pointer',
+    },
+    primary: {
+      backgroundColor: '#007bff',
+      color: '#fff',
+    },
+    secondary: {
+      backgroundColor: '#6c757d',
+      color: '#fff',
+    },
   },
-  link: { root: {} },
   divider: { root: { borderTopColor: 'gray', borderRadius: '5px' } },
+  link: { root: { color: '#0000EE', textDecoration: 'none' } },
   typography: { root: {} },
   image: {
     root: {},
@@ -83,5 +95,14 @@ export const defaultTheme: ThemeOptions = {
     imageColumn: {},
   },
   preheader: { root: {} },
-  quote: { root: {} },
+  quote: {
+    root: {
+      borderLeft: '4px solid #d0d7de',
+      padding: '6px',
+      paddingLeft: '10px',
+      color: '#7e8698',
+      fontStyle: 'italic',
+      fontSize: '1.1em',
+    },
+  },
 };

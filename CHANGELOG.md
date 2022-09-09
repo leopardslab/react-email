@@ -1,3 +1,19 @@
+# [1.14.0](https://github.com/leopardslab/react-email/compare/v1.13.0...v1.14.0) (2022-09-09)
+
+
+### Features
+
+* **link:** default styles for link ([#105](https://github.com/leopardslab/react-email/issues/105)) ([d830fec](https://github.com/leopardslab/react-email/commit/d830fec4ffd2347a8d0e6f4633da7147eee23263)), closes [#99](https://github.com/leopardslab/react-email/issues/99)
+* **quote:** default styles for quote ([#107](https://github.com/leopardslab/react-email/issues/107)) ([a35fdbb](https://github.com/leopardslab/react-email/commit/a35fdbb526fd45a9af880058a350b1cf7e86f0e2)), closes [#101](https://github.com/leopardslab/react-email/issues/101)
+
+# [1.13.0](https://github.com/leopardslab/react-email/compare/v1.12.0...v1.13.0) (2022-09-09)
+
+
+### Features
+
+* **button:** default stylings for styled-button ([#104](https://github.com/leopardslab/react-email/issues/104)) ([308cf4c](https://github.com/leopardslab/react-email/commit/308cf4c46b14df6022bec0127cdfe1ff716135c5)), closes [#98](https://github.com/leopardslab/react-email/issues/98)
+* **validateemail:** add and export validateEmail function ([#103](https://github.com/leopardslab/react-email/issues/103)) ([a400b31](https://github.com/leopardslab/react-email/commit/a400b312ca7cc9891df0908930d40be876c5215a)), closes [#97](https://github.com/leopardslab/react-email/issues/97)
+
 # [1.12.0](https://github.com/leopardslab/react-email/compare/v1.11.0...v1.12.0) (2022-08-22)
 
 

@@ -1,9 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`components/Quote Default smoke-test 1`] = `
-<div id="quote"
-     style="margin: 0px; padding: 0px;"
->
-  This is a Text Quote
+<div style="margin: 0px auto; max-width: 600px;">
+  <div id="quote"
+       style="margin: 0px; padding: 6px 6px 6px 10px; border-left: 4px solid rgb(208, 215, 222); color: rgb(126, 134, 152); font-style: italic; font-size: 1.1em;"
+  >
+    This is a Text Quote Component written in TypeScript
+  </div>
 </div>
 `;
