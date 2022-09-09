@@ -1,3 +1,11 @@
+# [1.13.0](https://github.com/leopardslab/react-email/compare/v1.12.0...v1.13.0) (2022-09-09)
+
+
+### Features
+
+* **button:** default stylings for styled-button ([#104](https://github.com/leopardslab/react-email/issues/104)) ([308cf4c](https://github.com/leopardslab/react-email/commit/308cf4c46b14df6022bec0127cdfe1ff716135c5)), closes [#98](https://github.com/leopardslab/react-email/issues/98)
+* **validateemail:** add and export validateEmail function ([#103](https://github.com/leopardslab/react-email/issues/103)) ([a400b31](https://github.com/leopardslab/react-email/commit/a400b312ca7cc9891df0908930d40be876c5215a)), closes [#97](https://github.com/leopardslab/react-email/issues/97)
+
 # [1.12.0](https://github.com/leopardslab/react-email/compare/v1.11.0...v1.12.0) (2022-08-22)
 
 
