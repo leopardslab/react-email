@@ -81,8 +81,8 @@ export const defaultTheme: ThemeOptions = {
       color: '#fff',
     },
   },
+  divider: { root: { borderTopColor: 'gray', borderRadius: '5px' } },
   link: { root: { color: '#0000EE', textDecoration: 'none' } },
-  divider: { root: {} },
   typography: { root: {} },
   image: {
     root: {},
