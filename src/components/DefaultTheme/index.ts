@@ -81,7 +81,7 @@ export const defaultTheme: ThemeOptions = {
       color: '#fff',
     },
   },
-  link: { root: {} },
+  link: { root: { color: '#0000EE', textDecoration: 'none' } },
   divider: { root: {} },
   typography: { root: {} },
   image: {
