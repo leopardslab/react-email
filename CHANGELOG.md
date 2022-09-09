@@ -1,3 +1,11 @@
+# [1.14.0](https://github.com/leopardslab/react-email/compare/v1.13.0...v1.14.0) (2022-09-09)
+
+
+### Features
+
+* **link:** default styles for link ([#105](https://github.com/leopardslab/react-email/issues/105)) ([d830fec](https://github.com/leopardslab/react-email/commit/d830fec4ffd2347a8d0e6f4633da7147eee23263)), closes [#99](https://github.com/leopardslab/react-email/issues/99)
+* **quote:** default styles for quote ([#107](https://github.com/leopardslab/react-email/issues/107)) ([a35fdbb](https://github.com/leopardslab/react-email/commit/a35fdbb526fd45a9af880058a350b1cf7e86f0e2)), closes [#101](https://github.com/leopardslab/react-email/issues/101)
+
 # [1.13.0](https://github.com/leopardslab/react-email/compare/v1.12.0...v1.13.0) (2022-09-09)
 
 
