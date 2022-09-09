@@ -95,5 +95,14 @@ export const defaultTheme: ThemeOptions = {
     imageColumn: {},
   },
   preheader: { root: {} },
-  quote: { root: {} },
+  quote: {
+    root: {
+      borderLeft: '4px solid #d0d7de',
+      padding: '6px',
+      paddingLeft: '10px',
+      color: '#7e8698',
+      fontStyle: 'italic',
+      fontSize: '1.1em',
+    },
+  },
 };
