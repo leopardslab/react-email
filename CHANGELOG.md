@@ -1,3 +1,10 @@
+# [1.15.0](https://github.com/leopardslab/react-email/compare/v1.14.0...v1.15.0) (2022-09-09)
+
+
+### Features
+
+* **divider:** default styles for divider ([#106](https://github.com/leopardslab/react-email/issues/106)) ([da23da4](https://github.com/leopardslab/react-email/commit/da23da4ae0a0b575ee165405a0d6e6e1395f75f5)), closes [#100](https://github.com/leopardslab/react-email/issues/100)
+
 # [1.14.0](https://github.com/leopardslab/react-email/compare/v1.13.0...v1.14.0) (2022-09-09)
 
 
