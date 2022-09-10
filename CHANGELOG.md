@@ -1,3 +1,10 @@
+## [1.15.1](https://github.com/leopardslab/react-email/compare/v1.15.0...v1.15.1) (2022-09-10)
+
+
+### Bug Fixes
+
+* **defaulthtml:** fix defaultHTML ([#109](https://github.com/leopardslab/react-email/issues/109)) ([d24426d](https://github.com/leopardslab/react-email/commit/d24426ddaa37dd8dff99324fdaca0ae9bc64bcdf)), closes [#108](https://github.com/leopardslab/react-email/issues/108)
+
 # [1.15.0](https://github.com/leopardslab/react-email/compare/v1.14.0...v1.15.0) (2022-09-09)
 
 
