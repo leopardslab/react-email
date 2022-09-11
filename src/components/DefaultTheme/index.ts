@@ -69,6 +69,7 @@ export const defaultTheme: ThemeOptions = {
       fontSize: '18px',
       textDecoration: 'none',
       padding: '10px 16px',
+      margin: '10px 0',
       borderRadius: '5px',
       cursor: 'pointer',
     },
@@ -85,7 +86,9 @@ export const defaultTheme: ThemeOptions = {
   link: { root: { color: '#0000EE', textDecoration: 'none' } },
   typography: { root: {} },
   image: {
-    root: {},
+    root: {
+      margin: '10px',
+    },
     body: {},
     table: {},
     image: {},
