@@ -1,3 +1,10 @@
+## [1.15.3](https://github.com/leopardslab/react-email/compare/v1.15.2...v1.15.3) (2022-09-11)
+
+
+### Bug Fixes
+
+* **style:** add default margin for button and image ([#112](https://github.com/leopardslab/react-email/issues/112)) ([8dd243a](https://github.com/leopardslab/react-email/commit/8dd243a4b216d33b56ea6c2704b6bf079da3ea52))
+
 ## [1.15.2](https://github.com/leopardslab/react-email/compare/v1.15.1...v1.15.2) (2022-09-11)
 
 
