@@ -1,3 +1,10 @@
+## [1.15.2](https://github.com/leopardslab/react-email/compare/v1.15.1...v1.15.2) (2022-09-11)
+
+
+### Bug Fixes
+
+* **exports:** add missing exports ([#111](https://github.com/leopardslab/react-email/issues/111)) ([ca059c4](https://github.com/leopardslab/react-email/commit/ca059c407f31147d8f110d2900030ab6b8bec6d3)), closes [#110](https://github.com/leopardslab/react-email/issues/110)
+
 ## [1.15.1](https://github.com/leopardslab/react-email/compare/v1.15.0...v1.15.1) (2022-09-10)
 
 
