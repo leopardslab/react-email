@@ -8,3 +8,4 @@ export * from './Typography';
 export * from './Image';
 export * from './Preheader';
 export * from './Quote';
+export type { ThemeOptions } from './DefaultTheme';
