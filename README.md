@@ -49,10 +49,12 @@ ReactEmailComponents depends on the following libraries:
 ** Note, use the latest version of the above libraries.
 
 # Usage
-## Create your Email Layout :
-all the layouts are created in typescript and are exported as a react component. You can use the layouts as a base for your email. 
+### Create your Email Layout :
+* Starting with a blank project
 
-## Create your Email Template :
+All the layouts are created in typescript and are exported as a react component. You can use the layouts as a base for your email. 
+
+### Create your Email Template :
 
 ```typescript
 import {Email, Typography }from "@leopardslab/react-email";
