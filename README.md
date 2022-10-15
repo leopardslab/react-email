@@ -1,4 +1,6 @@
-# react-email
+# React Email
+
+Emails are a different kind of a beast. Not every fancy CSS trick you put in works. We built this components how Email clients wants it. For a start, all the styles are compiled into inline styles. But you do not have to worry about putting styles inline. Our framework provides great Developer Experience with easy to use mechanims to let you define the styles as usual, but turned to inlined styles at te endof the day when you send the emails. 
 
 ## How to install
 
