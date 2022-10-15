@@ -1,8 +1,8 @@
 # React Email
 
-Emails are a different kind of a beast. Not every fancy CSS trick you put in works. We built this components framework how Email clients wants it. For a start, all the styles are compiled into inline styles. But you do not have to worry about putting styles inline. Our framework provides great Developer Experience with easy to use mechanisms to let you define the styles as usual, but turned to inlined styles at the end of the day when you send the emails. 
+Emails are a different kind of beast. Not every fancy CSS trick you put in works. We built this components' library depending on how Email clients want it. For a start, all the styles are compiled into inline styles. But you do not have to worry about putting styles inline. Our library provides great Developer Experience with easy-to-use mechanisms to let you define the styles as usual but turned to inlined styles at the end of the day when you send the emails. Also, you don't need to worry about the styling and HTML tags guidelines for different email clients, use our components and leave the handling of compatibility to us.
 
-## Glimps of usage
+## Glimpses of usage
 
 ```jsx
 import { Email, Section, Column, Typography } from '@leopardslab/react-email';
@@ -20,15 +20,19 @@ export const HelloEmail = ({ name }) => {
 };
 ```
 
-Add some custome styles?
+**Want to add some custom styles?**
+
+Here we go:
+
 ```jsx
 import { Divider, Email, Section, Column, Typography } from '@leopardslab/react-email';
 
 const styles = {
   greyBackground: {
-    backgroud: 'grey'
-  }
-}
+    backgroud: 'grey',
+  },
+};
+
 export const HelloEmail = ({ name }) => {
   return (
     <Email>
@@ -46,7 +50,7 @@ export const HelloEmail = ({ name }) => {
 };
 ```
 
-Load a theme?
+**You can also define and load a fully custom theme!** 🤯
 
 ```jsx
 import { Email, Section, Column, Typography } from '@leopardslab/react-email';
@@ -64,13 +68,13 @@ export const HelloEmail = ({ name }) => {
   );
 };
 ```
-Define your own component?
+
+**Create your own component like this:**
 
 ```jsx
-
-// InfoPanel.ts
+// InfoPanel.jsx
 const useStyles = makeStyles({
-  root: { padding: '10px'},
+  root: { padding: '10px' },
   info: { border: '1px solid #DD5353' },
   warn: { border: '1px solid #FF731D' },
 });
@@ -78,32 +82,32 @@ const useStyles = makeStyles({
 export const InfoPanel = ({
   children,
   variant = 'info',
-  classes, // if you wanty to override some styles when you are using it.
+  classes, // if you want to override some styles when you are using the component
 }) => {
   const styles = useStyles({ classes });
   const infoPanelStyle = sx(styles.root, styles[variant]); // combines root and variant specific styles
 
-  return (
-    <div style={infoPanelStyle}>
-      {children}
-    </a>
-  );
+  return <div style={infoPanelStyle}>{children}</div>;
 };
+
+// HelloWorld.jsx
+import { InfoPanel } from './InfoPanel';
 
 const styles = {
   greyBackground: {
-    backgroud: 'grey'
-  }
-}
+    backgroud: 'grey',
+  },
+};
 
-// HelloWorld.ts
 export const HelloEmail = ({ name }) => {
   return (
     <Email theme={darkTheme}>
       <Section>
         <Column>
-          <InfoPanel variant="warn">Hello {name}!!!!</InfoPanel>
-          <InfoPanel variant="warn" classes={{ root: styles.greyBackground }}>Be prepared!</InfoPanel>
+          <InfoPanel variant="info">Hello {name}!!!!</InfoPanel>
+          <InfoPanel variant="warn" classes={{ root: styles.greyBackground }}>
+            Be prepared!
+          </InfoPanel>
         </Column>
       </Section>
     </Email>
