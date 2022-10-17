@@ -1,3 +1,5 @@
+## [1.15.5](https://github.com/leopardslab/react-email/compare/v1.15.4...v1.15.5) (2022-10-17)
+
 ## [1.15.4](https://github.com/leopardslab/react-email/compare/v1.15.3...v1.15.4) (2022-10-15)
 
 ## [1.15.3](https://github.com/leopardslab/react-email/compare/v1.15.2...v1.15.3) (2022-09-11)
