@@ -49,7 +49,7 @@ ReactEmailComponents depends on the following libraries:
 ** Note, use the latest version of the above libraries.
 
 # Usage
-### Create your Email Layout :
+## Create your Email Layout :
 * Starting with a blank project
 
 All the layouts are created in typescript and are exported as a react component. You can use the layouts as a base for your email. 
@@ -75,7 +75,48 @@ export const EmailTemplate = ({name}: {name: string}) => {
     )
 }
 ```
+```
+* rap the entire return statement in a <Email> component
+```
+## Components
+### Emails
+The Email component is the root component for all emails. It is responsible for setting the default styles for the email and inlining the styles before the page is rendered.
 
+### Typography
+The Typography component is a wrapper for all of the typography components. It is responsible for setting the default styles for the typography components.
+
+## Section
+The Section component is a wrapper for all of the layout components. It is responsible for setting the default styles for the layout components.
+## Column
+The Column component is a wrapper as Column under the Section component. It is responsible for setting the default styles for the Column components.
+
+## Button
+The Button component for defining a button in the email. It is responsible for setting the default styles for the button..
+
+## Image
+The Image component for defining a image in the email. It is responsible for setting the default styles for the image.
+
+## Component Stylings:
+## 1) Adding parameters inside the component to change the style of the component. 
+
+This should be done in the following way:
+
+```css
+classes={{root: {margin: "10px 0 20px 0"}}}
+```
+Example:
+
+```TypeScript
+<Email>
+      <Section>
+        <Column>
+          <Typography classes={{root: {margin: "10px 0 20px 0"}}}  variant="h2">
+                Hello 
+          </Typography>
+        </Column>
+      </Section>
+</Email>
+```
 
 # Inspiration
 
