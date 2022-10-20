@@ -1,19 +1,19 @@
-# React-Email 
+# 📶 React-Email 
 A React-Based component and utility method-based lightweight library to provide a common interface for email building that users can install and use to build clean and responsive email easily.
 
-# React Email Components
+# 📍 React Email Components
 A collection of React components to help build consistent cross-client emails. As well as the layout components, there is a function that inlined your styles before the page is rendered.
 
 Note: This was built for a Stylus workflow, additional work will have to be done to get this working with vanilla CSS or another preprocessor.
 
-# Getting started
+# 🔰 Getting started
 ReactEmailComponents is split up into two modules:
 
 * react-email-components
 * react-email-components-stylus
 Although they are both necessary, their setup is entirely different and therefore separated. To get started, follow the steps below for each.
 
-# Installation
+# ❇️ Installation
 ## react-email-components
 this module contains all of the React components necessary to get ReactEmailComponents to work.
 
@@ -37,7 +37,7 @@ npm install react-email-components-stylus
 ```bash
 @require 'react-email-components-stylus'
 ```
-# Dependencies
+# 🛞 Dependencies
 ReactEmailComponents depends on the following libraries:
 
 * "@leopardslab/react-email": "^1.15.3"
@@ -48,7 +48,7 @@ ReactEmailComponents depends on the following libraries:
 
 ** Note, use the latest version of the above libraries.
 
-# Usage
+# 📌 Usage
 ## Create your Email Layout :
 * Starting with a blank project
 
@@ -78,7 +78,7 @@ export const EmailTemplate = ({name}: {name: string}) => {
 ```
 * rap the entire return statement in a <Email> component
 ```
-## Components
+# 💠 Components
 ### Emails
 The Email component is the root component for all emails. It is responsible for setting the default styles for the email and inlining the styles before the page is rendered.
 
@@ -96,7 +96,7 @@ The Button component for defining a button in the email. It is responsible for s
 ## Image
 The Image component for defining a image in the email. It is responsible for setting the default styles for the image.
 
-## Component Stylings:
+# ⚙️ Component Stylings:
 ## 1) Adding parameters inside the component to change the style of the component. 
 
 This should be done in the following way:
@@ -117,7 +117,46 @@ Example:
       </Section>
 </Email>
 ```
+## 2) Using "MakeStyles" to change the style of the component.
+This should be done in the following way:
 
+```css
+const useStyles = makeStyles({
+  title: {
+    color: "red",
+  },
+  paragraph: {
+    color: "blue",
+  },
+});
+
+/* add the hook in the export function */
+
+const styles = useStyles();
+
+```
+# Generate Email Template
+* Add a file Generate.js in the root directory of the project.
+
+```JavaScript
+const { writeFileSync } = require('fs');
+const {autoConfig} = require ("./config.js");
+const {
+  generateEmail,
+  generateTextEmailFromHTML,
+  validateEmail,
+} = require("@leopardslab/react-email");
+const { EmailTemplate } = require("./lib/cjs");
+
+const html = generateEmail(EmailTemplate({ name: "John" }));
+writeFileSync("./index.html", html);
+
+const text = generateTextEmailFromHTML(html);
+
+console.log(text);
+```
+
+**Importing "EmailTemplate" that you have created [Email Layout](#create-your-email-template)
 # Inspiration
 
 The idea of a React Component Library for Emails is not novel. There have been other implementations around for a while and we were inspired a lot by these solutions and many other generic Component Libraries. Following are a few of the amazing other implementations.
@@ -128,3 +167,8 @@ We try to be the community backed up-to-date solution one can depend on and cont
 - [https://www.npmjs.com/package/react-email-components](https://www.npmjs.com/package/react-email-components)
 - [https://mjml.io/getting-started/1](https://mjml.io/getting-started/1)
 - [https://github.com/ovrsea/medium-articles/tree/master/react-email-templates](https://github.com/ovrsea/medium-articles/tree/master/react-email-templates)
+
+<br>
+
+# References
+### You can watch this [video](https://www.youtube.com/watch?v=0vbLYyPerhU&ab_channel=NiloySik) to get complete info about the package and how to use it to build clean and responsive email layouts easily.
