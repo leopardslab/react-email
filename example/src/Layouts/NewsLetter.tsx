@@ -38,7 +38,7 @@ export const NewsLetter = () => {
                     <Typography classes={{root: {margin: "10px 0 20px 0"}}} > 
                         5G services in India are soon going to be operational. As per recent reports, the Government of India would officially launch a number of 5G services at the inauguration of the India Mobile Congress, or IMC, on September 29, 2022.5G services in India will be rolled out in a phased manner. In the first phase, only 13 selected cities would get speed 5G internet services from either Airtel, Jio, or both. 
                     </Typography>
-                    <Button varient="primary" harf="https://www.firstpost.com/tech/news-analysis/5g-rollout-in-india-which-indian-cities-will-get-5g-services-in-the-first-phase-11113861.html">
+                    <Button varient="primary" harf="https://www.firstpost.com/tech/news-analysis5g-rollout-in-india-which-indian-cities-will-get-5g-services-in-the-first-phase-11113861.html">
                         Read More
                     </Button>
                 </Column>
@@ -51,7 +51,8 @@ export const NewsLetter = () => {
                     </Typography>
                     <Typography classes={{root: {margin: "10px 0 20px 0"}}} > 
                         Elon Musk has a penchant for the letter “X.” He calls his son with the singer Grimes, whose actual name is a collection of letters and symbols, “X.” He named the company he created to buy Twitter "X Holdings." His rocket company is, naturally, SpaceX.Now he also apparently intends to morph Twitter into an “everything app” he calls X.For months, the Tesla and SpaceX CEO has expressed interest in creating his own version of China's WeChat — a “super app” that does video chats, messaging, streaming and payments — for the rest of the world.. 
-                    <Button varient="primary" harf="https://www.republicworld.com/technology-news/apps/elon-musk-has-a-super-app-plan-for-twitter-its-super-vague-articleshow.html">
+                    </Typography>
+                    <Button varient="primary" harf="https://www.republicworld.com/technology-news/appselon-musk-has-a-super-app-plan-for-twitter-its-super-vague-articleshow.html">
                         Read More
                     </Button>
                 </Column>
