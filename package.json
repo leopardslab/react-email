@@ -51,7 +51,10 @@
     ]
   },
   "dependencies": {
-    "html-to-text": "^8.2.1"
+    "@leopardslab/react-email": "^1.15.5",
+    "html-to-text": "^8.2.1",
+    "react-email-components": "^0.1.13",
+    "react-email-components-stylus": "^0.1.6"
   },
   "peerDependencies": {
     "react": ">=16.8",
