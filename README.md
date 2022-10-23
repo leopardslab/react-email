@@ -58,6 +58,10 @@ this module contains all of the React components necessary to get ReactEmailComp
 Install using NPM or Yarn:
 
 ```bash
+ npm install @leopardslab/react-email
+```
+
+```bash
 npm install react-email-components
 ```
 
