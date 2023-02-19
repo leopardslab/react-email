@@ -2,7 +2,7 @@ node_modules/
 public/
 build/
 dist/
-docs/
+.docusaurus/
 docs-build/
 CHANGELOG.md
 example/lib/
