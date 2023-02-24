@@ -1,3 +1,10 @@
+## [1.15.6](https://github.com/leopardslab/react-email/compare/v1.15.5...v1.15.6) (2023-02-24)
+
+
+### Performance Improvements
+
+* **validateemail:** remove nodemailer and its related dependency ([7c4ea63](https://github.com/leopardslab/react-email/commit/7c4ea637259702a4bb6f22a5f7091847a6cdac0c)), closes [#133](https://github.com/leopardslab/react-email/issues/133)
+
 ## [1.15.5](https://github.com/leopardslab/react-email/compare/v1.15.4...v1.15.5) (2022-10-17)
 
 ## [1.15.4](https://github.com/leopardslab/react-email/compare/v1.15.3...v1.15.4) (2022-10-15)
